@@ -6,7 +6,8 @@ Authors@R:
         email = "phgrosjean@sciviews.org",
         comment = c(ORCID = "0000-0002-2694-9471"))
 Maintainer: Philippe Grosjean <phgrosjean@sciviews.org>
-Description: Multivariate analysis and data exploration by using SciViews::R conventions.
+Description: Multivariate analysis and data exploration by using SciViews::R
+  conventions.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

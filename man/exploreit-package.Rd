@@ -6,7 +6,10 @@
 \alias{exploreit-package}
 \title{exploreit: Exploratory Data Analysis in 'SciViews::R'}
 \description{
-Multivariate analysis and data exploration by using SciViews::R conventions.
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+
+Multivariate analysis and data exploration by using SciViews::R
+  conventions.
 }
 \author{
 \strong{Maintainer}: Philippe Grosjean \email{phgrosjean@sciviews.org} (\href{https://orcid.org/0000-0002-2694-9471}{ORCID})
