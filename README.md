@@ -2,6 +2,8 @@
 # exploreit
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/SciViews/exploreit/workflows/R-CMD-check/badge.svg)](https://github.com/SciViews/exploreit/actions)
+[![Codecov test coverage](https://codecov.io/gh/SciViews/exploreit/branch/master/graph/badge.svg)](https://codecov.io/gh/SciViews/exploreit?branch=master)
 <!-- badges: end -->
 
 The goal of exploreit is to ...
