@@ -42,8 +42,12 @@ jobs:
 
       - uses: r-lib/actions/setup-pandoc@v1
 
-      - name: Install libglpk required by igraph.so
-        run: sudo apt-get install -y libglpk-dev
+      - name: Install libglpk required by igraph.so on Linux
+        run: |
+          if [ "$RUNNER_OS" == "Linux" ]; then
+            sudo apt-get install -y libglpk-dev
+          fi
+        shell: bash
 
       - name: Query dependencies
         run: |
