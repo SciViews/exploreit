@@ -2,11 +2,11 @@
 % Please edit documentation in R/dissimilarity.R
 \name{dissimilarity}
 \alias{dissimilarity}
-\alias{print.dissimilarity}
-\alias{labels.dissimilarity}
-\alias{nobs.dissimilarity}
-\alias{autoplot.dissimilarity}
-\alias{chart.dissimilarity}
+\alias{print.Dissimilarity}
+\alias{labels.Dissimilarity}
+\alias{nobs.Dissimilarity}
+\alias{autoplot.Dissimilarity}
+\alias{chart.Dissimilarity}
 \title{Calculate a dissimilarity matrix}
 \usage{
 dissimilarity(
@@ -21,13 +21,13 @@ dissimilarity(
   ...
 )
 
-\method{print}{dissimilarity}(x, digits.d = 3L, rownames.lab = "labels", ...)
+\method{print}{Dissimilarity}(x, digits.d = 3L, rownames.lab = "labels", ...)
 
-\method{labels}{dissimilarity}(object, ...)
+\method{labels}{Dissimilarity}(object, ...)
 
-\method{nobs}{dissimilarity}(object, ...)
+\method{nobs}{Dissimilarity}(object, ...)
 
-\method{autoplot}{dissimilarity}(
+\method{autoplot}{Dissimilarity}(
   object,
   order = TRUE,
   show.labels = TRUE,
@@ -36,7 +36,7 @@ dissimilarity(
   ...
 )
 
-\method{chart}{dissimilarity}(
+\method{chart}{Dissimilarity}(
   data,
   order = TRUE,
   show.labels = TRUE,
@@ -66,7 +66,7 @@ dissimilarity(
 
 \item{...}{Further parameters passed to the \verb{fun =} (see its man page) for \code{\link[=dissimilarity]{dissimilarity()}}, or further arguments passed to methods.}
 
-\item{x, object}{A \code{dissimilarity} object}
+\item{x, object}{A \code{Dissimilarity} object}
 
 \item{digits.d}{Number of digits to print, by default, 3.}
 
@@ -85,7 +85,7 @@ dissimilarity(
 \item{env}{The environment where to evaluate the formula. If you don't understand this, you probably don't have to touch this arguments.}
 }
 \value{
-An S3 object of class \code{c("dissimilarity", "dist")}, thus inheriting from \code{dist}. A \code{dissimilarity} object is better displayed (specific \code{print()} method), and has also dedicated methods \code{labels()} (get line and column labels), \code{nobs()} (get number of observations, that is, number of lines or columns), \code{autoplot()} (generate a ggplot2 from the matrix) and \code{chart()} (generate a chart version of the ggplot2).
+An S3 object of class \code{c("Dissimilarity", "dist")}, thus inheriting from \code{dist}. A \code{Dissimilarity} object is better displayed (specific \code{print()} method), and has also dedicated methods \code{labels()} (get line and column labels), \code{nobs()} (get number of observations, that is, number of lines or columns), \code{autoplot()} (generate a ggplot2 from the matrix) and \code{chart()} (generate a chart version of the ggplot2).
 }
 \description{
 Compute a distance matrix from all pairs of columns or rows in

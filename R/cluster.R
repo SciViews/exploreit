@@ -6,7 +6,7 @@
 #' dissimilarity matrix to group individuals. It is represented by a dendrogram
 #' that can be cut at a certain level to form the final clusters.
 #'
-#' @param x A `dissimilarity` object.
+#' @param x A `Dissimilarity` object.
 #' @param ... Further arguments for the methods (see their respective manpages).
 #'
 #' @return A `cluster` object inheriting from `hclust`. Specific methods are: [str()] (compact display of the object content), [labels()] (get the labels for the observations), [nobs()] (number of observations), [predict()] (get the clusters, given a cutting level), [augment()] (add the groups to the original data frame or tibble), [plot()] (create a dendrogram as base R plot), [autoplot()] (create a dendrogram as a ggplot2), and [chart()] (create a dendrogram as a chart variant of a ggplot2).

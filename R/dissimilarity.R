@@ -1,5 +1,6 @@
 # dist is really a dissimilarity matrix => we use dissimilarity() as in the
-# {cluster} package, i.e., class is c("dissimilarity", "dist")
+# {cluster} package. However, to avoid clash, we use class
+# c("Dissimilarity", "dist") with an uppercase 'D'
 # TODO: also make a similarity object and convert between the two
 # fun can be stats::dist, vegan::vegdist, vegan::designdist, cluster::daisy
 # factoextra::get_dist and probably other dist-compatible functions
@@ -22,7 +23,7 @@
 #' @param fun A function that does the calculation and return a `dist`-like object (similar to what [stats::dist()]) provides. If `NULL` (by default), [stats::dist()] or [vegan::vegdist()] is used, depending on `method =`. Note that both functions calculate `"canberra"` differently, and in this case, it is the [vegan::vegdist()] version that is used by default. Other compatible functions: [vegan::designdist()], [cluster::daisy()], [factoextra::get_dist()], and probably more.
 #' @param ... Further parameters passed to the `fun =` (see its man page) for [dissimilarity()], or further arguments passed to methods.
 #'
-#' @return An S3 object of class `c("dissimilarity", "dist")`, thus inheriting from `dist`. A `dissimilarity` object is better displayed (specific `print()` method), and has also dedicated methods `labels()` (get line and column labels), `nobs()` (get number of observations, that is, number of lines or columns), `autoplot()` (generate a ggplot2 from the matrix) and `chart()` (generate a chart version of the ggplot2).
+#' @return An S3 object of class `c("Dissimilarity", "dist")`, thus inheriting from `dist`. A `Dissimilarity` object is better displayed (specific `print()` method), and has also dedicated methods `labels()` (get line and column labels), `nobs()` (get number of observations, that is, number of lines or columns), `autoplot()` (generate a ggplot2 from the matrix) and `chart()` (generate a chart version of the ggplot2).
 #' @export
 #' @seealso [stats::dist()], [vegan::vegdist()], [vegan::designdist()], [cluster::daisy()], [factoextra::get_dist()]
 #'
@@ -104,12 +105,12 @@ transpose = FALSE, fun = NULL, ...) {
     dst <- fun(data, method = method, ...)
   }
   attr(dst, "call") <- match.call()
-  # Depending if it is a dist or dissimilarity object, the method is stored in
+  # Depending if it is a dist or Dissimilarity object, the method is stored in
   # method or in Metric, but we use metric in our own version to avoid a clash
   # with the method item in cluster()/hclust() further on (hclust change it
   # into dist.method, but it is better to have the right name right now)
   attr(dst, "metric") <- method
-  # dist or dissimilarity object use Labels, but we use labels everywhere else
+  # dist or Dissimilarity object use Labels, but we use labels everywhere else
   # including in cluster()/hclust()
   # So, we make sure labels is present (in hclust, it is labels anyway!)
   attr(dst, "labels") <- rownames(data)
@@ -120,18 +121,18 @@ transpose = FALSE, fun = NULL, ...) {
   attr(dst, "rownames.col") <- rownames.col
   attr(dst, "transpose") <- transpose
   attr(dst, "scale") <- scale
-  class(dst) <- unique(c("dissimilarity", class(dst)))
+  class(dst) <- unique(c("Dissimilarity", class(dst)))
   dst
 }
 
-#' Convert a dist or matrix object into a dissimilarity object
+#' Convert a dist or matrix object into a Dissimilarity object
 #'
-#' @description Create a `dissimilarity` matrix from an existing distance matrix as `dist` object (e.g., from [stats::dist()], or [vegan::vegdist()]), or from a similarly shaped `matrix`object.
+#' @description Create a `Dissimilarity` matrix from an existing distance matrix as `dist` object (e.g., from [stats::dist()], or [vegan::vegdist()]), or from a similarly shaped `matrix`object.
 #'
-#' @param x An object to coerce into a `dissimilarity` object.
+#' @param x An object to coerce into a `Dissimilarity` object.
 #' @param ... Further argument passed to the coercion method.
 #'
-#' @return A `dissimilarity` object.
+#' @return A `Dissimilarity` object.
 #' @export
 #' @seealso [dissimilarity()]
 #'
@@ -142,7 +143,7 @@ transpose = FALSE, fun = NULL, ...) {
 #' # Construct a dist object
 #' iris_dist <- dist(iris_num)
 #' class(iris_dist)
-#' # Convert it into a dissimilarity object
+#' # Convert it into a Dissimilarity object
 #' iris_dis <- as.dissimilarity(iris_dist)
 #' class(iris_dis)
 as.dissimilarity <- function(x, ...) {
@@ -159,7 +160,7 @@ as.dissimilarity.matrix <- function(x, ...) {
   dst <- as.dist(x, ...)
   attr(dst, "call") <- match.call()
   attr(dst, "metric") <- attr(dst, "method") # Make sur metric is used
-  class(dst) <- unique(c("dissimilarity", class(dst)))
+  class(dst) <- unique(c("Dissimilarity", class(dst)))
   dst
 }
 
@@ -169,16 +170,16 @@ as.dissimilarity.dist <- as.dissimilarity.matrix
 
 #' @export
 #' @rdname as.dissimilarity
-as.dissimilarity.dissimilarity <- function(x, ...) {
-  x # Nothing to do, it is already a dissimilarity object!
+as.dissimilarity.Dissimilarity <- function(x, ...) {
+  x # Nothing to do, it is already a Dissimilarity object!
 }
 
 #' @export
 #' @rdname dissimilarity
-#' @param x,object A `dissimilarity` object
+#' @param x,object A `Dissimilarity` object
 #' @param  digits.d Number of digits to print, by default, 3.
 #' @param rownames.lab The name of the column containing the labels, by default `"labels"`.
-print.dissimilarity <- function(x, digits.d = 3L, rownames.lab = "labels",
+print.Dissimilarity <- function(x, digits.d = 3L, rownames.lab = "labels",
 ...) {
   # We want to print only the first few rows and columns
   mat <- as.matrix(x)
@@ -211,7 +212,7 @@ print.dissimilarity <- function(x, digits.d = 3L, rownames.lab = "labels",
 
 #' @export
 #' @rdname dissimilarity
-labels.dissimilarity <- function(object, ...) {
+labels.Dissimilarity <- function(object, ...) {
   labs <- attr(object, "labels")
   if (is.null(labs))
     labs <- attr(object, "Labels")
@@ -220,7 +221,7 @@ labels.dissimilarity <- function(object, ...) {
 
 #' @export
 #' @rdname dissimilarity
-nobs.dissimilarity <- function(object, ...)
+nobs.Dissimilarity <- function(object, ...)
   attr(object, "Size")
 
 #' @export
@@ -229,7 +230,7 @@ nobs.dissimilarity <- function(object, ...)
 #' @param show.labels Are the labels displayed on the axes (`TRUE` by default)?
 #' @param lab.size Force the size of the labels (`NULL` by default for automatic size).
 #' @param gradient The palette of color to use in the plot.
-autoplot.dissimilarity <- function(object, order = TRUE, show.labels = TRUE,
+autoplot.Dissimilarity <- function(object, order = TRUE, show.labels = TRUE,
 lab.size = NULL, gradient = list(low = "blue", mid = "white", high = "red"),
 ...) {
   factoextra::fviz_dist(object, order = order, show_labels = show.labels,
@@ -240,7 +241,7 @@ lab.size = NULL, gradient = list(low = "blue", mid = "white", high = "red"),
 #' @rdname dissimilarity
 #' @param type The type of plot. For the moment, only one plot is possible and the default value (`NULL`) should not be changed.
 #' @param env The environment where to evaluate the formula. If you don't understand this, you probably don't have to touch this arguments.
-chart.dissimilarity <- function(data, order = TRUE, show.labels = TRUE,
+chart.Dissimilarity <- function(data, order = TRUE, show.labels = TRUE,
 lab.size = NULL, gradient = list(low = "blue", mid = "white", high = "red"),
 ..., type = NULL, env = parent.frame()) {
   p <- autoplot(data, order = order, show_labels = show.labels,

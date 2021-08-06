@@ -42,6 +42,9 @@ jobs:
 
       - uses: r-lib/actions/setup-pandoc@v1
 
+      - name: Install libglpk required by igraph.so
+        run: sudo apt-get install -y libglpk-dev
+
       - name: Query dependencies
         run: |
           install.packages('remotes')

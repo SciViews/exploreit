@@ -5,8 +5,8 @@
 \alias{as_dissimilarity}
 \alias{as.dissimilarity.matrix}
 \alias{as.dissimilarity.dist}
-\alias{as.dissimilarity.dissimilarity}
-\title{Convert a dist or matrix object into a dissimilarity object}
+\alias{as.dissimilarity.Dissimilarity}
+\title{Convert a dist or matrix object into a Dissimilarity object}
 \usage{
 as.dissimilarity(x, ...)
 
@@ -16,18 +16,18 @@ as_dissimilarity(x, ...)
 
 \method{as.dissimilarity}{dist}(x, ...)
 
-\method{as.dissimilarity}{dissimilarity}(x, ...)
+\method{as.dissimilarity}{Dissimilarity}(x, ...)
 }
 \arguments{
-\item{x}{An object to coerce into a \code{dissimilarity} object.}
+\item{x}{An object to coerce into a \code{Dissimilarity} object.}
 
 \item{...}{Further argument passed to the coercion method.}
 }
 \value{
-A \code{dissimilarity} object.
+A \code{Dissimilarity} object.
 }
 \description{
-Create a \code{dissimilarity} matrix from an existing distance matrix as \code{dist} object (e.g., from \code{\link[stats:dist]{stats::dist()}}, or \code{\link[vegan:vegdist]{vegan::vegdist()}}), or from a similarly shaped \code{matrix}object.
+Create a \code{Dissimilarity} matrix from an existing distance matrix as \code{dist} object (e.g., from \code{\link[stats:dist]{stats::dist()}}, or \code{\link[vegan:vegdist]{vegan::vegdist()}}), or from a similarly shaped \code{matrix}object.
 }
 \examples{
 SciViews::R
@@ -36,7 +36,7 @@ read("iris", package = "datasets") \%>.\%
 # Construct a dist object
 iris_dist <- dist(iris_num)
 class(iris_dist)
-# Convert it into a dissimilarity object
+# Convert it into a Dissimilarity object
 iris_dis <- as.dissimilarity(iris_dist)
 class(iris_dis)
 }

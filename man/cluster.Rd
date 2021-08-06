@@ -55,7 +55,7 @@ cluster(x, ...)
 \method{chart}{cluster}(data, ..., type = NULL, env = parent.frame())
 }
 \arguments{
-\item{x}{A \code{dissimilarity} object.}
+\item{x}{A \code{Dissimilarity} object.}
 
 \item{...}{Further arguments for the methods (see their respective manpages).}
 
