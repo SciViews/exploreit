@@ -13,12 +13,36 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Imports: 
+    ape,
+    chart (>= 1.3.0),
+    dplyr,
+    factoextra,
+    fastcluster,
+    generics,
+    ggdendro,
+    ggplot2,
+    graphics,
+    stats,
+    tibble,
+    utils,
+    vegan
 Suggests: 
+    flow (>= 1.1.0),
     covr,
     knitr,
     rmarkdown,
     spelling,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    data.io (>= 1.3.0),
+    SciViews (>= 1.1.2),
+    MASS,
+    cluster
+Remotes: 
+    SciViews/chart,
+    SciViews/flow,
+    SciViews/data.io
+    SciViews/SciViews
 Config/testthat/edition: 3
 Language: en-US
 VignetteBuilder: knitr
