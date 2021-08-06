@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • exploreit</title>
+<title>Draw circles in a plot — circle • exploreit</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -60,7 +60,10 @@
 <!-- end of addition for svPkgdown -->
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Draw circles in a plot — circle" />
+<meta property="og:description" content="Add a circle in a base R plot, given its center (x and y
+coordinates) and its diameter. In exploreit, this function can be used to
+cut a circular dendrogram, see example." />
 <meta property="og:image" content="https://www.sciviews.org/exploreit/logo.png" />
 <meta name="twitter:card" content="summary" />
 
@@ -88,7 +91,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <!-- preloader start -->
 <div class="preloader">
@@ -160,66 +163,67 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Draw circles in a plot</h1>
+    
+    <div class="hidden name"><code>circle.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>Add a circle in a base R plot, given its center (x and y
+coordinates) and its diameter. In exploreit, this function can be used to
+cut a circular dendrogram, see example.</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>circle</span><span class='op'>(</span>x <span class='op'>=</span> <span class='fl'>0</span>, y <span class='op'>=</span> <span class='fl'>0</span>, d <span class='op'>=</span> <span class='fl'>1</span>, col <span class='op'>=</span> <span class='fl'>0</span>, lwd <span class='op'>=</span> <span class='fl'>1</span>, lty <span class='op'>=</span> <span class='fl'>1</span>, <span class='va'>...</span><span class='op'>)</span></pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      
-      
-    </tbody><tbody>
-      
-      
-      <tr>
-        
-        <td>
-          <p><code><a href="as.dissimilarity.html">as.dissimilarity()</a></code> <code><a href="as.dissimilarity.html">as_dissimilarity()</a></code> </p>
-        </td>
-        <td><p>Convert a dist or matrix object into a dissimilarity object</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="circle.html">circle()</a></code> </p>
-        </td>
-        <td><p>Draw circles in a plot</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="cluster.html">cluster()</a></code> <code><a href="cluster.html">str(<i>&lt;cluster&gt;</i>)</a></code> <code><a href="cluster.html">labels(<i>&lt;cluster&gt;</i>)</a></code> <code><a href="cluster.html">nobs(<i>&lt;cluster&gt;</i>)</a></code> <code><a href="cluster.html">predict(<i>&lt;cluster&gt;</i>)</a></code> <code><a href="cluster.html">augment(<i>&lt;cluster&gt;</i>)</a></code> <code><a href="cluster.html">plot(<i>&lt;cluster&gt;</i>)</a></code> <code><a href="cluster.html">autoplot(<i>&lt;cluster&gt;</i>)</a></code> <code><a href="cluster.html">chart(<i>&lt;cluster&gt;</i>)</a></code> </p>
-        </td>
-        <td><p>Hierarchical Clustering Analysis</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="dissimilarity.html">dissimilarity()</a></code> <code><a href="dissimilarity.html">print(<i>&lt;dissimilarity&gt;</i>)</a></code> <code><a href="dissimilarity.html">labels(<i>&lt;dissimilarity&gt;</i>)</a></code> <code><a href="dissimilarity.html">nobs(<i>&lt;dissimilarity&gt;</i>)</a></code> <code><a href="dissimilarity.html">autoplot(<i>&lt;dissimilarity&gt;</i>)</a></code> <code><a href="dissimilarity.html">chart(<i>&lt;dissimilarity&gt;</i>)</a></code> </p>
-        </td>
-        <td><p>Calculate a dissimilarity matrix</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="geom_dendroline.html">geom_dendroline()</a></code> </p>
-        </td>
-        <td><p>Draw a line to cut a dendrogram</p></td>
-      </tr>
-    </tbody>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>x</th>
+      <td><p>The x coordinate of the center of the circle.</p></td>
+    </tr>
+    <tr>
+      <th>y</th>
+      <td><p>The y coordinate of the center of the circle.</p></td>
+    </tr>
+    <tr>
+      <th>d</th>
+      <td><p>The diameter of the circle.</p></td>
+    </tr>
+    <tr>
+      <th>col</th>
+      <td><p>The color of the border of the circle.</p></td>
+    </tr>
+    <tr>
+      <th>lwd</th>
+      <td><p>The width of the circle border.</p></td>
+    </tr>
+    <tr>
+      <th>lty</th>
+      <td><p>The line type to use to draw the circle.</p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>More arguments passed to <code><a href='https://rdrr.io/r/graphics/symbols.html'>symbols()</a></code>.</p></td>
+    </tr>
     </table>
-  </div>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>This function returns <code>NULL</code>. It is invoked for it side effect of
+adding a circle in a base R plot.</p>
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p><code><a href='https://rdrr.io/r/graphics/symbols.html'>symbols()</a></code></p></div>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fl'>0</span><span class='op'>:</span><span class='fl'>2</span>, y <span class='op'>=</span> <span class='fl'>0</span><span class='op'>:</span><span class='fl'>2</span><span class='op'>)</span>
+</div><div class='input'><span class='fu'>circle</span><span class='op'>(</span>x <span class='op'>=</span> <span class='fl'>1</span>, y <span class='op'>=</span> <span class='fl'>1</span>, d <span class='op'>=</span> <span class='fl'>1</span>, col <span class='op'>=</span> <span class='st'>"red"</span>, lwd <span class='op'>=</span> <span class='fl'>2</span>, lty <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span>
+</div><div class='img'><img src='circle-1.png' alt='' width='700' height='433' /></div></pre>
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>

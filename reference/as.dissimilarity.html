@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • exploreit</title>
+<title>Convert a dist or matrix object into a dissimilarity object — as.dissimilarity • exploreit</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -60,7 +60,8 @@
 <!-- end of addition for svPkgdown -->
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Convert a dist or matrix object into a dissimilarity object — as.dissimilarity" />
+<meta property="og:description" content="Create a dissimilarity matrix from an existing distance matrix as dist object (e.g., from stats::dist(), or vegan::vegdist()), or from a similarly shaped matrixobject." />
 <meta property="og:image" content="https://www.sciviews.org/exploreit/logo.png" />
 <meta name="twitter:card" content="summary" />
 
@@ -88,7 +89,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <!-- preloader start -->
 <div class="preloader">
@@ -160,66 +161,74 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Convert a dist or matrix object into a dissimilarity object</h1>
+    
+    <div class="hidden name"><code>as.dissimilarity.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>Create a <code>dissimilarity</code> matrix from an existing distance matrix as <code>dist</code> object (e.g., from <code><a href='https://rdrr.io/r/stats/dist.html'>stats::dist()</a></code>, or <code><a href='https://rdrr.io/pkg/vegan/man/vegdist.html'>vegan::vegdist()</a></code>), or from a similarly shaped <code>matrix</code>object.</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>as.dissimilarity</span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>...</span><span class='op'>)</span>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      
-      
-    </tbody><tbody>
-      
-      
-      <tr>
-        
-        <td>
-          <p><code><a href="as.dissimilarity.html">as.dissimilarity()</a></code> <code><a href="as.dissimilarity.html">as_dissimilarity()</a></code> </p>
-        </td>
-        <td><p>Convert a dist or matrix object into a dissimilarity object</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="circle.html">circle()</a></code> </p>
-        </td>
-        <td><p>Draw circles in a plot</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="cluster.html">cluster()</a></code> <code><a href="cluster.html">str(<i>&lt;cluster&gt;</i>)</a></code> <code><a href="cluster.html">labels(<i>&lt;cluster&gt;</i>)</a></code> <code><a href="cluster.html">nobs(<i>&lt;cluster&gt;</i>)</a></code> <code><a href="cluster.html">predict(<i>&lt;cluster&gt;</i>)</a></code> <code><a href="cluster.html">augment(<i>&lt;cluster&gt;</i>)</a></code> <code><a href="cluster.html">plot(<i>&lt;cluster&gt;</i>)</a></code> <code><a href="cluster.html">autoplot(<i>&lt;cluster&gt;</i>)</a></code> <code><a href="cluster.html">chart(<i>&lt;cluster&gt;</i>)</a></code> </p>
-        </td>
-        <td><p>Hierarchical Clustering Analysis</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="dissimilarity.html">dissimilarity()</a></code> <code><a href="dissimilarity.html">print(<i>&lt;dissimilarity&gt;</i>)</a></code> <code><a href="dissimilarity.html">labels(<i>&lt;dissimilarity&gt;</i>)</a></code> <code><a href="dissimilarity.html">nobs(<i>&lt;dissimilarity&gt;</i>)</a></code> <code><a href="dissimilarity.html">autoplot(<i>&lt;dissimilarity&gt;</i>)</a></code> <code><a href="dissimilarity.html">chart(<i>&lt;dissimilarity&gt;</i>)</a></code> </p>
-        </td>
-        <td><p>Calculate a dissimilarity matrix</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="geom_dendroline.html">geom_dendroline()</a></code> </p>
-        </td>
-        <td><p>Draw a line to cut a dendrogram</p></td>
-      </tr>
-    </tbody>
+<span class='fu'>as_dissimilarity</span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>...</span><span class='op'>)</span>
+
+<span class='co'># S3 method for matrix</span>
+<span class='fu'>as.dissimilarity</span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>...</span><span class='op'>)</span>
+
+<span class='co'># S3 method for dist</span>
+<span class='fu'>as.dissimilarity</span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>...</span><span class='op'>)</span>
+
+<span class='co'># S3 method for dissimilarity</span>
+<span class='fu'>as.dissimilarity</span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>...</span><span class='op'>)</span></pre>
+
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>x</th>
+      <td><p>An object to coerce into a <code>dissimilarity</code> object.</p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>Further argument passed to the coercion method.</p></td>
+    </tr>
     </table>
-  </div>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>A <code>dissimilarity</code> object.</p>
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p><code><a href='dissimilarity.html'>dissimilarity()</a></code></p></div>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>SciViews</span><span class='fu'>::</span><span class='va'><a href='https://www.sciviews.org/SciViews/reference/SciViews_R.html'>R</a></span>
+</div><div class='output co'>#&gt; <span class='message'>Registered S3 method overwritten by 'svMisc':</span>
+#&gt; <span class='message'>  method             from </span>
+#&gt; <span class='message'>  $.subsettable_type chart</span></div><div class='output co'>#&gt; <span class='message'>── <span style='font-weight: bold;'>Attaching packages</span> ───────────────────────────────────── SciViews::R 1.1.2 ──</span></div><div class='output co'>#&gt; <span class='message'><span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>SciViews </span> 1.1.2       <span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>purrr    </span> 0.3.4  </span>
+#&gt; <span class='message'><span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>chart    </span> 1.3.0       <span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>readr    </span> 2.0.0  </span>
+#&gt; <span class='message'><span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>flow     </span> 1.1.0       <span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>tidyr    </span> 1.1.3  </span>
+#&gt; <span class='message'><span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>data.io  </span> 1.3.0       <span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>tibble   </span> 3.1.3  </span>
+#&gt; <span class='message'><span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>svMisc   </span> 1.2.1       <span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>ggplot2  </span> 3.3.5  </span>
+#&gt; <span class='message'><span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>forcats  </span> 0.5.1       <span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>tidyverse</span> 1.3.1  </span>
+#&gt; <span class='message'><span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>stringr  </span> 1.4.0       <span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>lattice  </span> 0.20.44</span>
+#&gt; <span class='message'><span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>dplyr    </span> 1.0.7       <span style='color: #00BB00;'>✔</span> <span style='color: #0000BB;'>MASS     </span> 7.3.54 </span></div><div class='output co'>#&gt; ── <span style='font-weight: bold;'>Conflicts</span> ────────────────────────────────────────── tidyverse_conflicts() ──
+#&gt; <span style='color: #BB0000;'>✖</span> <span style='color: #0000BB;'>dplyr</span>::<span style='color: #00BB00;'>filter()</span> masks <span style='color: #0000BB;'>stats</span>::filter()
+#&gt; <span style='color: #BB0000;'>✖</span> <span style='color: #0000BB;'>dplyr</span>::<span style='color: #00BB00;'>lag()</span>    masks <span style='color: #0000BB;'>stats</span>::lag()
+#&gt; <span style='color: #BB0000;'>✖</span> <span style='color: #0000BB;'>dplyr</span>::<span style='color: #00BB00;'>select()</span> masks <span style='color: #0000BB;'>MASS</span>::select()</div><div class='input'><span class='fu'>read</span><span class='op'>(</span><span class='st'>"iris"</span>, package <span class='op'>=</span> <span class='st'>"datasets"</span><span class='op'>)</span> <span class='op'>%&gt;.%</span>
+  <span class='fu'>select</span><span class='op'>(</span><span class='va'>.</span>, <span class='op'>-</span><span class='va'>species</span><span class='op'>)</span> <span class='op'>-&gt;</span> <span class='va'>iris_num</span>  <span class='co'># Only numeric columns from iris</span>
+<span class='co'># Construct a dist object</span>
+<span class='va'>iris_dist</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/dist.html'>dist</a></span><span class='op'>(</span><span class='va'>iris_num</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/class.html'>class</a></span><span class='op'>(</span><span class='va'>iris_dist</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] "dist"</div><div class='input'><span class='co'># Convert it into a dissimilarity object</span>
+<span class='va'>iris_dis</span> <span class='op'>&lt;-</span> <span class='fu'>as.dissimilarity</span><span class='op'>(</span><span class='va'>iris_dist</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/class.html'>class</a></span><span class='op'>(</span><span class='va'>iris_dis</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] "dissimilarity" "dist"         </div></pre>
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
