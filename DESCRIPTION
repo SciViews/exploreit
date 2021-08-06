@@ -41,7 +41,7 @@ Suggests:
 Remotes: 
     SciViews/chart,
     SciViews/flow,
-    SciViews/data.io
+    SciViews/data.io,
     SciViews/SciViews
 Config/testthat/edition: 3
 Language: en-US
