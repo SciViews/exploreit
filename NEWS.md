@@ -1,3 +1,7 @@
+# exploreit 0.1.0
+
+* Functions and methods for hierarchical clustering are added (`dissimilarity()` and `cluster()`).
+
 # exploreit 0.0.0.9000
 
 * Added hex sticker (logo) with:

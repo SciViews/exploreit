@@ -1,6 +1,6 @@
 Package: exploreit
 Title: Exploratory Data Analysis in 'SciViews::R'
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person("Philippe", "Grosjean", role = c("aut", "cre"),
         email = "phgrosjean@sciviews.org",
