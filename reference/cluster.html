@@ -184,22 +184,22 @@ that can be cut at a certain level to form the final clusters.</p>
 <span class='co'># S3 method for dist</span>
 <span class='fu'>cluster</span><span class='op'>(</span><span class='va'>x</span>, method <span class='op'>=</span> <span class='st'>"complete"</span>, fun <span class='op'>=</span> <span class='cn'>NULL</span>, <span class='va'>...</span><span class='op'>)</span>
 
-<span class='co'># S3 method for cluster</span>
+<span class='co'># S3 method for Cluster</span>
 <span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span><span class='op'>(</span><span class='va'>object</span>, max.level <span class='op'>=</span> <span class='cn'>NA</span>, digits.d <span class='op'>=</span> <span class='fl'>3L</span>, <span class='va'>...</span><span class='op'>)</span>
 
-<span class='co'># S3 method for cluster</span>
+<span class='co'># S3 method for Cluster</span>
 <span class='fu'><a href='https://rdrr.io/r/base/labels.html'>labels</a></span><span class='op'>(</span><span class='va'>object</span>, <span class='va'>...</span><span class='op'>)</span>
 
-<span class='co'># S3 method for cluster</span>
+<span class='co'># S3 method for Cluster</span>
 <span class='fu'><a href='https://rdrr.io/r/stats/nobs.html'>nobs</a></span><span class='op'>(</span><span class='va'>object</span>, <span class='va'>...</span><span class='op'>)</span>
 
-<span class='co'># S3 method for cluster</span>
+<span class='co'># S3 method for Cluster</span>
 <span class='fu'><a href='https://rdrr.io/r/stats/predict.html'>predict</a></span><span class='op'>(</span><span class='va'>object</span>, k <span class='op'>=</span> <span class='cn'>NULL</span>, h <span class='op'>=</span> <span class='cn'>NULL</span>, <span class='va'>...</span><span class='op'>)</span>
 
-<span class='co'># S3 method for cluster</span>
+<span class='co'># S3 method for Cluster</span>
 <span class='fu'><a href='https://generics.r-lib.org/reference/augment.html'>augment</a></span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>data</span>, k <span class='op'>=</span> <span class='cn'>NULL</span>, h <span class='op'>=</span> <span class='cn'>NULL</span>, <span class='va'>...</span><span class='op'>)</span>
 
-<span class='co'># S3 method for cluster</span>
+<span class='co'># S3 method for Cluster</span>
 <span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span>
   <span class='va'>x</span>,
   <span class='va'>y</span>,
@@ -211,7 +211,7 @@ that can be cut at a certain level to form the final clusters.</p>
   <span class='va'>...</span>
 <span class='op'>)</span>
 
-<span class='co'># S3 method for cluster</span>
+<span class='co'># S3 method for Cluster</span>
 <span class='fu'>autoplot</span><span class='op'>(</span>
   <span class='va'>object</span>,
   labels <span class='op'>=</span> <span class='cn'>TRUE</span>,
@@ -223,7 +223,7 @@ that can be cut at a certain level to form the final clusters.</p>
   <span class='va'>...</span>
 <span class='op'>)</span>
 
-<span class='co'># S3 method for cluster</span>
+<span class='co'># S3 method for Cluster</span>
 <span class='fu'>chart</span><span class='op'>(</span><span class='va'>data</span>, <span class='va'>...</span>, type <span class='op'>=</span> <span class='cn'>NULL</span>, env <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/sys.parent.html'>parent.frame</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
@@ -335,7 +335,7 @@ understand this, it means you should not touch it!</p></td>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>A <code>cluster</code> object inheriting from <code>hclust</code>. Specific methods are: <code><a href='https://rdrr.io/r/utils/str.html'>str()</a></code> (compact display of the object content), <code><a href='https://rdrr.io/r/base/labels.html'>labels()</a></code> (get the labels for the observations), <code><a href='https://rdrr.io/r/stats/nobs.html'>nobs()</a></code> (number of observations), <code><a href='https://rdrr.io/r/stats/predict.html'>predict()</a></code> (get the clusters, given a cutting level), <code><a href='https://generics.r-lib.org/reference/augment.html'>augment()</a></code> (add the groups to the original data frame or tibble), <code><a href='https://rdrr.io/r/graphics/plot.default.html'>plot()</a></code> (create a dendrogram as base R plot), <code>autoplot()</code> (create a dendrogram as a ggplot2), and <code>chart()</code> (create a dendrogram as a chart variant of a ggplot2).</p>
+    <p>A <code>Cluster</code> object inheriting from <code>hclust</code>. Specific methods are: <code><a href='https://rdrr.io/r/utils/str.html'>str()</a></code> (compact display of the object content), <code><a href='https://rdrr.io/r/base/labels.html'>labels()</a></code> (get the labels for the observations), <code><a href='https://rdrr.io/r/stats/nobs.html'>nobs()</a></code> (number of observations), <code><a href='https://rdrr.io/r/stats/predict.html'>predict()</a></code> (get the clusters, given a cutting level), <code><a href='https://generics.r-lib.org/reference/augment.html'>augment()</a></code> (add the groups to the original data frame or tibble), <code><a href='https://rdrr.io/r/graphics/plot.default.html'>plot()</a></code> (create a dendrogram as base R plot), <code>autoplot()</code> (create a dendrogram as a ggplot2), and <code>chart()</code> (create a dendrogram as a chart variant of a ggplot2).</p>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <div class='dont-index'><p><code><a href='dissimilarity.html'>dissimilarity()</a></code>, <code><a href='https://rdrr.io/r/stats/hclust.html'>stats::hclust()</a></code>, <code><a href='https://rdrr.io/pkg/fastcluster/man/hclust.html'>fastcluster::hclust()</a></code></p></div>
