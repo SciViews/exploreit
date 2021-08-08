@@ -9,7 +9,7 @@
 #' @param x A `Dissimilarity` object.
 #' @param ... Further arguments for the methods (see their respective manpages).
 #'
-#' @return A `cluster` object inheriting from `hclust`. Specific methods are: [str()] (compact display of the object content), [labels()] (get the labels for the observations), [nobs()] (number of observations), [predict()] (get the clusters, given a cutting level), [augment()] (add the groups to the original data frame or tibble), [plot()] (create a dendrogram as base R plot), [autoplot()] (create a dendrogram as a ggplot2), and [chart()] (create a dendrogram as a chart variant of a ggplot2).
+#' @return A `Cluster` object inheriting from `hclust`. Specific methods are: [str()] (compact display of the object content), [labels()] (get the labels for the observations), [nobs()] (number of observations), [predict()] (get the clusters, given a cutting level), [augment()] (add the groups to the original data frame or tibble), [plot()] (create a dendrogram as base R plot), [autoplot()] (create a dendrogram as a ggplot2), and [chart()] (create a dendrogram as a chart variant of a ggplot2).
 #' @export
 #' @seealso [dissimilarity()], [stats::hclust()], [fastcluster::hclust()]
 #'
@@ -104,7 +104,7 @@ cluster.dist <- function(x, method = "complete", fun = NULL, ...) {
   clst$rownames.col <- attr(x, "rownames.col")
   clst$scale <- attr(x, "scale")
   clst$transpose <- attr(x, "transpose")
-  class(clst) <- unique(c("cluster", class(clst)))
+  class(clst) <- unique(c("Cluster", class(clst)))
   clst
 }
 
@@ -113,20 +113,20 @@ cluster.dist <- function(x, method = "complete", fun = NULL, ...) {
 #' @param object A `cluster` object.
 #' @param max.level The maximum level to present.
 #' @param digits.d The number of digits to print.
-str.cluster <- function(object, max.level = NA, digits.d = 3L, ...) {
+str.Cluster <- function(object, max.level = NA, digits.d = 3L, ...) {
   # str() method is gathered from a dendrogram object
   str(as.dendrogram(object), max.level = max.level, digits.d = digits.d, ...)
 }
 
 #' @export
 #' @rdname cluster
-labels.cluster <- function(object, ...) {
+labels.Cluster <- function(object, ...) {
   object$labels
 }
 
 #' @export
 #' @rdname cluster
-nobs.cluster <- function(object, ...) {
+nobs.Cluster <- function(object, ...) {
   length(object$order)
 }
 
@@ -135,7 +135,7 @@ nobs.cluster <- function(object, ...) {
 #' @param k The number of clusters to get.
 #' @param h The height where the dendrogram should be cut (give either `k =` or
 #' `h = `, but not both at the same time).
-predict.cluster <- function(object, k = NULL, h = NULL, ...) {
+predict.Cluster <- function(object, k = NULL, h = NULL, ...) {
   # cutree() is an explicit name, but it does not follow the rule of using
   # known methods... and here, it really something that predict() is made for,
   # except it cannot handle newdata =, that argument is not in its definition
@@ -145,7 +145,7 @@ predict.cluster <- function(object, k = NULL, h = NULL, ...) {
 #' @export
 #' @rdname cluster
 #' @param data The original dataset
-augment.cluster <- function(x, data, k = NULL, h = NULL, ...) {
+augment.Cluster <- function(x, data, k = NULL, h = NULL, ...) {
   # There is no broom::glance() or broom::tidy() yet (what to put in it?),
   # but broom:augment() should be nice: add clusters as .fitted in the tibble
   # We depend on generics for the definition of augment
@@ -187,7 +187,7 @@ augment.cluster <- function(x, data, k = NULL, h = NULL, ...) {
 #' to chose the cutting level).
 #' @param lab The label of the y axis (vertical) or x axis (horizontal), by
 #' default `"Height"`.
-plot.cluster <- function(x, y, labels = TRUE, hang = -1, check = TRUE,
+plot.Cluster <- function(x, y, labels = TRUE, hang = -1, check = TRUE,
 type = "vertical", lab = "Height", ...) {
   # Instead of the default plot.hclust(), we prefer plot.dendrogram()
   # that allows for more and better variations of the dendrogram (horizontal or
@@ -220,7 +220,7 @@ type = "vertical", lab = "Height", ...) {
 #' @param theme The ggplot2 theme to use, by default, it is [theme_sciviews()].
 #' @param xlab Label of the x axis (nothing by default)
 #' @param ylab Label of the y axis, by default `"Height"`.
-autoplot.cluster <- function(object, labels = TRUE, type = "vertical",
+autoplot.Cluster <- function(object, labels = TRUE, type = "vertical",
 circ.text.size = 3, theme = theme_sciviews(), xlab = "", ylab = "Height", ...) {
   # TODO: make sure the dendrogram is correct with different ggplot2 themes
   if (is.null(type))
@@ -303,7 +303,7 @@ circ.text.size = 3, theme = theme_sciviews(), xlab = "", ylab = "Height", ...) {
 #' @rdname cluster
 #' @param env The environment where to evaluate formulas. If you don't
 #'   understand this, it means you should not touch it!
-chart.cluster <- function(data, ...,
+chart.Cluster <- function(data, ...,
 type = NULL, env = parent.frame()) {
   p <- autoplot(data, type = type, ...)
   class(p) <- unique(c("Chart", class(p)))

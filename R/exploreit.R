@@ -1,4 +1,4 @@
 #' @importFrom generics augment
 #' @export
-#' @seealso [augment.cluster()]
+#' @seealso [augment.Cluster()]
 generics::augment

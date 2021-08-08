@@ -4,14 +4,14 @@
 \alias{cluster}
 \alias{cluster.default}
 \alias{cluster.dist}
-\alias{str.cluster}
-\alias{labels.cluster}
-\alias{nobs.cluster}
-\alias{predict.cluster}
-\alias{augment.cluster}
-\alias{plot.cluster}
-\alias{autoplot.cluster}
-\alias{chart.cluster}
+\alias{str.Cluster}
+\alias{labels.Cluster}
+\alias{nobs.Cluster}
+\alias{predict.Cluster}
+\alias{augment.Cluster}
+\alias{plot.Cluster}
+\alias{autoplot.Cluster}
+\alias{chart.Cluster}
 \title{Hierarchical Clustering Analysis}
 \usage{
 cluster(x, ...)
@@ -20,17 +20,17 @@ cluster(x, ...)
 
 \method{cluster}{dist}(x, method = "complete", fun = NULL, ...)
 
-\method{str}{cluster}(object, max.level = NA, digits.d = 3L, ...)
+\method{str}{Cluster}(object, max.level = NA, digits.d = 3L, ...)
 
-\method{labels}{cluster}(object, ...)
+\method{labels}{Cluster}(object, ...)
 
-\method{nobs}{cluster}(object, ...)
+\method{nobs}{Cluster}(object, ...)
 
-\method{predict}{cluster}(object, k = NULL, h = NULL, ...)
+\method{predict}{Cluster}(object, k = NULL, h = NULL, ...)
 
-\method{augment}{cluster}(x, data, k = NULL, h = NULL, ...)
+\method{augment}{Cluster}(x, data, k = NULL, h = NULL, ...)
 
-\method{plot}{cluster}(
+\method{plot}{Cluster}(
   x,
   y,
   labels = TRUE,
@@ -41,7 +41,7 @@ cluster(x, ...)
   ...
 )
 
-\method{autoplot}{cluster}(
+\method{autoplot}{Cluster}(
   object,
   labels = TRUE,
   type = "vertical",
@@ -52,7 +52,7 @@ cluster(x, ...)
   ...
 )
 
-\method{chart}{cluster}(data, ..., type = NULL, env = parent.frame())
+\method{chart}{Cluster}(data, ..., type = NULL, env = parent.frame())
 }
 \arguments{
 \item{x}{A \code{Dissimilarity} object.}
@@ -116,7 +116,7 @@ default \code{"Height"}.}
 understand this, it means you should not touch it!}
 }
 \value{
-A \code{cluster} object inheriting from \code{hclust}. Specific methods are: \code{\link[=str]{str()}} (compact display of the object content), \code{\link[=labels]{labels()}} (get the labels for the observations), \code{\link[=nobs]{nobs()}} (number of observations), \code{\link[=predict]{predict()}} (get the clusters, given a cutting level), \code{\link[=augment]{augment()}} (add the groups to the original data frame or tibble), \code{\link[=plot]{plot()}} (create a dendrogram as base R plot), \code{\link[=autoplot]{autoplot()}} (create a dendrogram as a ggplot2), and \code{\link[=chart]{chart()}} (create a dendrogram as a chart variant of a ggplot2).
+A \code{Cluster} object inheriting from \code{hclust}. Specific methods are: \code{\link[=str]{str()}} (compact display of the object content), \code{\link[=labels]{labels()}} (get the labels for the observations), \code{\link[=nobs]{nobs()}} (number of observations), \code{\link[=predict]{predict()}} (get the clusters, given a cutting level), \code{\link[=augment]{augment()}} (add the groups to the original data frame or tibble), \code{\link[=plot]{plot()}} (create a dendrogram as base R plot), \code{\link[=autoplot]{autoplot()}} (create a dendrogram as a ggplot2), and \code{\link[=chart]{chart()}} (create a dendrogram as a chart variant of a ggplot2).
 }
 \description{
 Hierarchical clustering is an agglomerative method that uses a
