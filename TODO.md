@@ -1,3 +1,3 @@
 # exploreit To Do list
 
-- (todo list items)
+- Add code for Kmeans, SOM, PCA FA & MFA
