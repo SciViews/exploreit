@@ -1,3 +1,3 @@
 # exploreit To Do list
 
-- Add code for Kmeans, SOM, PCA FA & MFA
+-   Add code for Kmeans, SOM, PCA FA & MFA

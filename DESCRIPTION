@@ -1,18 +1,16 @@
 Package: exploreit
-Title: Exploratory Data Analysis in 'SciViews::R'
+Type: Package
 Version: 0.1.0
-Authors@R: 
-    person("Philippe", "Grosjean", role = c("aut", "cre"),
-        email = "phgrosjean@sciviews.org",
-        comment = c(ORCID = "0000-0002-2694-9471"))
-Maintainer: Philippe Grosjean <phgrosjean@sciviews.org>
+Date: 2022-05-10
+Title: 'SciViews' - Exploratory Data Analysis
 Description: Multivariate analysis and data exploration by using SciViews::R
   conventions.
-License: MIT + file LICENSE
-Encoding: UTF-8
-LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+Authors@R: 
+  person("Philippe", "Grosjean", role = c("aut", "cre"),
+    email = "phgrosjean@sciviews.org",
+    comment = c(ORCID = "0000-0002-2694-9471"))
+Maintainer: Philippe Grosjean <phgrosjean@sciviews.org>
+Depends: R (>= 4.0.0)
 Imports: 
     ape,
     chart (>= 1.3.0),
@@ -43,6 +41,12 @@ Remotes:
     SciViews/flow,
     SciViews/data.io,
     SciViews/SciViews
-Config/testthat/edition: 3
-Language: en-US
+License: GPL (>= 2)
+URL: https://github.com/SciViews/exploreit, https://www.sciviews.org/exploreit/
+BugReports: https://github.com/SciViews/exploreit/issues
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
 VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+Config/testthat/edition: 3
