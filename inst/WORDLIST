@@ -1,12 +1,14 @@
 CMD
 Codecov
 darkgreen
+df
 dir
 exploreit
 fastcluster
 ggplot
 GitHub
 hexSticker
+kmeans
 Lifecycle
 manpages
 MDS
@@ -15,4 +17,6 @@ png
 SciViews
 seagreen
 showWarnings
+tbl
 tibble
+tibble's

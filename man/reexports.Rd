@@ -6,7 +6,7 @@
 \alias{augment}
 \title{Objects exported from other packages}
 \seealso{
-\code{\link[=augment.Cluster]{augment.Cluster()}}
+\code{\link[=augment.Cluster]{augment.Cluster()}}, \code{\link[=augment.kmeans]{augment.kmeans()}}
 }
 \keyword{internal}
 \description{

@@ -18,8 +18,8 @@ dendrogram type) at height \code{h} to depict where it is cut into groups.
 \examples{
 SciViews::R
 iris <- read("iris", package = "datasets")
-iris \%>.\%
-  select(., -species) \%>.\%
+iris_num <- iris[, -5]
+iris_num \%>.\%
   dissimilarity(.) \%>.\%
   cluster(.) ->
   iris_cluster

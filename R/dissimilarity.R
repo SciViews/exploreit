@@ -29,8 +29,8 @@
 #'
 #' @examples
 #' SciViews::R
-#' read("iris", package = "datasets") %>.%
-#'   select(., -species) -> iris_num  # Only numeric columns from iris
+#' iris <- read("iris", package = "datasets")
+#' iris_num <- iris[, -5] # Only numeric columns from iris
 #' # Compare the 150 flowers and nicely print the result
 #' dissimilarity(iris_num, method = "manhattan")
 #' # Compare the measurements by transposing and scaling them first
@@ -138,8 +138,8 @@ transpose = FALSE, fun = NULL, ...) {
 #'
 #' @examples
 #' SciViews::R
-#' read("iris", package = "datasets") %>.%
-#'   select(., -species) -> iris_num  # Only numeric columns from iris
+#' iris <- read("iris", package = "datasets")
+#' iris_num <- iris[, -5] # Only numeric columns from iris
 #' # Construct a dist object
 #' iris_dist <- dist(iris_num)
 #' class(iris_dist)

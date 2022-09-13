@@ -8,8 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-Multivariate analysis and data exploration by using SciViews::R
-  conventions.
+Multivariate analysis and data exploration by using SciViews::R conventions.
 }
 \seealso{
 Useful links:

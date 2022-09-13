@@ -126,7 +126,7 @@ that can be cut at a certain level to form the final clusters.
 \examples{
 SciViews::R
 iris <- read("iris", package = "datasets")
-iris_num <- select(iris, -species) # Only numeric columns from iris
+iris_num <- iris[, -5] # Only numeric columns from iris
 # Cluster the 150 flowers
 iris_dis <- dissimilarity(iris_num, method = "euclidean", scale = TRUE)
 (iris_clust <- cluster(iris_dis, method = "complete"))

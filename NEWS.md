@@ -1,5 +1,11 @@
 # exploreit 0.1.0
 
+-   `k_means()`, `profile_k()` and associated methods added.
+
+-   Methods `scale()` for data.frame, data.table and tibble's tbl_df.
+
+# exploreit 0.1.0
+
 -   Functions and methods for hierarchical clustering are added (`dissimilarity()` and `cluster()`).
 
 # exploreit 0.0.0.9000

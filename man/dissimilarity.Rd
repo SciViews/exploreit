@@ -93,8 +93,8 @@ a data frame, using a unified SciViews::R formula interface.
 }
 \examples{
 SciViews::R
-read("iris", package = "datasets") \%>.\%
-  select(., -species) -> iris_num  # Only numeric columns from iris
+iris <- read("iris", package = "datasets")
+iris_num <- iris[, -5] # Only numeric columns from iris
 # Compare the 150 flowers and nicely print the result
 dissimilarity(iris_num, method = "manhattan")
 # Compare the measurements by transposing and scaling them first

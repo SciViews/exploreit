@@ -31,8 +31,8 @@ Create a \code{Dissimilarity} matrix from an existing distance matrix as \code{d
 }
 \examples{
 SciViews::R
-read("iris", package = "datasets") \%>.\%
-  select(., -species) -> iris_num  # Only numeric columns from iris
+iris <- read("iris", package = "datasets")
+iris_num <- iris[, -5] # Only numeric columns from iris
 # Construct a dist object
 iris_dist <- dist(iris_num)
 class(iris_dist)
