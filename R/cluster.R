@@ -169,7 +169,7 @@ augment.Cluster <- function(x, data, k = NULL, h = NULL, ...) {
     stop("Different number of items in ", msg, " (",nrow(data) ,
       ") and in the clusters (", length(clst), ")")
   }
-  tibble::add_column(data, .fitted = clst)
+  add_column(data, .fitted = clst) # tibble::add_column
 }
 
 #' @export

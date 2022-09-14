@@ -5,6 +5,7 @@
 \alias{reexports}
 \alias{augment}
 \alias{glance}
+\alias{tidy}
 \title{Objects exported from other packages}
 \seealso{
 \code{\link[=augment.Cluster]{augment.Cluster()}}, \code{\link[=augment.kmeans]{augment.kmeans()}}
@@ -17,8 +18,6 @@ These objects are imported from other packages. Follow the links
 below to see their documentation.
 
 \describe{
-  \item{broom}{\code{\link[broom:reexports]{glance}}}
-
-  \item{generics}{\code{\link[generics]{augment}}}
+  \item{generics}{\code{\link[generics]{augment}}, \code{\link[generics]{glance}}, \code{\link[generics]{tidy}}}
 }}
 

@@ -3,7 +3,11 @@
 #' @seealso [augment.Cluster()], [augment.kmeans()]
 generics::augment
 
-#' @importFrom broom glance
+#' @importFrom generics glance
 #' @export
 #' @seealso [glance.mds()]
-broom::glance
+generics::glance
+
+#' @importFrom generics tidy
+#' @export
+generics::tidy

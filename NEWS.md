@@ -1,5 +1,7 @@
 # exploreit 0.1.0
 
+-   `pca()` and `chart()` for PCA added.
+
 -   `mds()` and associated methods and functions (`shepard()`) added.
 
 -   `k_means()`, `profile_k()` and associated methods added.
