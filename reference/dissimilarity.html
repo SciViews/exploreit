@@ -58,7 +58,7 @@ a data frame, using a unified SciViews::R formula interface."><meta property="og
   </a>
 </li>
       </ul><div class="navbar-title">
-        <a class="navbar-brand" href="../index.html"><p class="h2">exploreit <small>v0.1.0</small></p></a>
+        <a class="navbar-brand" href="../index.html"><p class="h2">exploreit <small>v1.0.0</small></p></a>
       </div>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -82,92 +82,129 @@ a data frame, using a unified SciViews::R formula interface.</p>
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">dissimilarity</span><span class="op">(</span>
-  <span class="va">data</span>,
-  formula <span class="op">=</span> <span class="op">~</span><span class="va">.</span>,
-  subset <span class="op">=</span> <span class="cn">NULL</span>,
-  method <span class="op">=</span> <span class="st">"euclidean"</span>,
-  scale <span class="op">=</span> <span class="cn">FALSE</span>,
-  rownames.col <span class="op">=</span> <span class="st">"rowname"</span>,
-  transpose <span class="op">=</span> <span class="cn">FALSE</span>,
-  fun <span class="op">=</span> <span class="cn">NULL</span>,
-  <span class="va">...</span>
-<span class="op">)</span>
-
-<span class="co"># S3 method for Dissimilarity</span>
-<span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">x</span>, digits.d <span class="op">=</span> <span class="fl">3L</span>, rownames.lab <span class="op">=</span> <span class="st">"labels"</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for Dissimilarity</span>
-<span class="fu"><a href="https://rdrr.io/r/base/labels.html" class="external-link">labels</a></span><span class="op">(</span><span class="va">object</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for Dissimilarity</span>
-<span class="fu"><a href="https://rdrr.io/r/stats/nobs.html" class="external-link">nobs</a></span><span class="op">(</span><span class="va">object</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for Dissimilarity</span>
-<span class="fu">autoplot</span><span class="op">(</span>
-  <span class="va">object</span>,
-  order <span class="op">=</span> <span class="cn">TRUE</span>,
-  show.labels <span class="op">=</span> <span class="cn">TRUE</span>,
-  lab.size <span class="op">=</span> <span class="cn">NULL</span>,
-  gradient <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>low <span class="op">=</span> <span class="st">"blue"</span>, mid <span class="op">=</span> <span class="st">"white"</span>, high <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span>,
-  <span class="va">...</span>
-<span class="op">)</span>
-
-<span class="co"># S3 method for Dissimilarity</span>
-<span class="fu">chart</span><span class="op">(</span>
-  <span class="va">data</span>,
-  order <span class="op">=</span> <span class="cn">TRUE</span>,
-  show.labels <span class="op">=</span> <span class="cn">TRUE</span>,
-  lab.size <span class="op">=</span> <span class="cn">NULL</span>,
-  gradient <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>low <span class="op">=</span> <span class="st">"blue"</span>, mid <span class="op">=</span> <span class="st">"white"</span>, high <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span>,
-  <span class="va">...</span>,
-  type <span class="op">=</span> <span class="cn">NULL</span>,
-  env <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">dissimilarity</span><span class="op">(</span></span>
+<span>  <span class="va">data</span>,</span>
+<span>  formula <span class="op">=</span> <span class="op">~</span><span class="va">.</span>,</span>
+<span>  subset <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  method <span class="op">=</span> <span class="st">"euclidean"</span>,</span>
+<span>  scale <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  rownames.col <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">getOption</a></span><span class="op">(</span><span class="st">"SciViews.dtx.rownames"</span>, default <span class="op">=</span> <span class="st">".rownames"</span><span class="op">)</span>,</span>
+<span>  transpose <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  fun <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  <span class="va">...</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for Dissimilarity</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">x</span>, digits.d <span class="op">=</span> <span class="fl">3L</span>, rownames.lab <span class="op">=</span> <span class="st">"labels"</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for Dissimilarity</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/labels.html" class="external-link">labels</a></span><span class="op">(</span><span class="va">object</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for Dissimilarity</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/nobs.html" class="external-link">nobs</a></span><span class="op">(</span><span class="va">object</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for Dissimilarity</span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/autoplot.html" class="external-link">autoplot</a></span><span class="op">(</span></span>
+<span>  <span class="va">object</span>,</span>
+<span>  order <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  show.labels <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  lab.size <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  gradient <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>low <span class="op">=</span> <span class="st">"blue"</span>, mid <span class="op">=</span> <span class="st">"white"</span>, high <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span>,</span>
+<span>  <span class="va">...</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for Dissimilarity</span></span>
+<span><span class="fu"><a href="https://www.sciviews.org/svMisc/reference/chart.html" class="external-link">chart</a></span><span class="op">(</span></span>
+<span>  <span class="va">data</span>,</span>
+<span>  order <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  show.labels <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  lab.size <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  gradient <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>low <span class="op">=</span> <span class="st">"blue"</span>, mid <span class="op">=</span> <span class="st">"white"</span>, high <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span>,</span>
+<span>  <span class="va">...</span>,</span>
+<span>  type <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  env <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>data</dt>
 <dd><p>A data.frame, tibble or matrix.</p></dd>
+
+
 <dt>formula</dt>
 <dd><p>A right-side only formula (<code>~ ...</code>) indicating which columns to keep in the data. The default one (<code>~ .</code>) keeps all columns.</p></dd>
+
+
 <dt>subset</dt>
 <dd><p>An expression indicating which rows to keep from data.</p></dd>
+
+
 <dt>method</dt>
 <dd><p>The distance (dissimilarity) method to use. By default, it is <code>"euclidean"</code>, but it can also be <code>"maximum"</code>, <code>"binary"</code>, <code>"minkowski"</code> from <code><a href="https://rdrr.io/r/stats/dist.html" class="external-link">stats::dist()</a></code>, or <code>"bray"</code>, <code>"manhattan"</code>, <code>"canberra"</code>, <code>"clark"</code>, <code>"kulczynski"</code>, <code>"jaccard"</code>, <code>"gower"</code>, <code>"altGower"</code>, <code>"morisita"</code>, <code>"horm"</code>, <code>"mountfort"</code>, <code>"raup"</code>, <code>"binomial"</code>, <code>"chao"</code>, <code>"cao"</code>, <code>"mahalanobis"</code>, <code>"chisq"</code>, or <code>"chord"</code> from <code><a href="https://rdrr.io/pkg/vegan/man/vegdist.html" class="external-link">vegan::vegdist()</a></code>, or any other distance from the function you provide in <code>fun =</code>.</p></dd>
+
+
 <dt>scale</dt>
 <dd><p>Do we scale (mean = 0, standard deviation = 1) the data before calculating the distance (<code>FALSE</code> by default)?</p></dd>
+
+
 <dt>rownames.col</dt>
 <dd><p>In case the <code>data</code> object does not have row names (a <code>tibble</code> for instance), which column should be used for name of the rows?</p></dd>
+
+
 <dt>transpose</dt>
 <dd><p>Do we transpose <code>data</code> first (to calculate distance between columns instead of rows)? By default, not (<code>FALSE</code>).</p></dd>
+
+
 <dt>fun</dt>
 <dd><p>A function that does the calculation and return a <code>dist</code>-like object (similar to what <code><a href="https://rdrr.io/r/stats/dist.html" class="external-link">stats::dist()</a></code>) provides. If <code>NULL</code> (by default), <code><a href="https://rdrr.io/r/stats/dist.html" class="external-link">stats::dist()</a></code> or <code><a href="https://rdrr.io/pkg/vegan/man/vegdist.html" class="external-link">vegan::vegdist()</a></code> is used, depending on <code>method =</code>. Note that both functions calculate <code>"canberra"</code> differently, and in this case, it is the <code><a href="https://rdrr.io/pkg/vegan/man/vegdist.html" class="external-link">vegan::vegdist()</a></code> version that is used by default. Other compatible functions: <code><a href="https://rdrr.io/pkg/vegan/man/designdist.html" class="external-link">vegan::designdist()</a></code>, <code><a href="https://rdrr.io/pkg/cluster/man/daisy.html" class="external-link">cluster::daisy()</a></code>, <code><a href="https://rdrr.io/pkg/factoextra/man/dist.html" class="external-link">factoextra::get_dist()</a></code>, and probably more.</p></dd>
+
+
 <dt>...</dt>
 <dd><p>Further parameters passed to the <code>fun =</code> (see its man page) for <code>dissimilarity()</code>, or further arguments passed to methods.</p></dd>
+
+
 <dt>x, object</dt>
 <dd><p>A <code>Dissimilarity</code> object</p></dd>
+
+
 <dt>digits.d</dt>
 <dd><p>Number of digits to print, by default, 3.</p></dd>
+
+
 <dt>rownames.lab</dt>
 <dd><p>The name of the column containing the labels, by default <code>"labels"</code>.</p></dd>
+
+
 <dt>order</dt>
 <dd><p>Do we reorder the lines and columns according to their resemblance (<code>TRUE</code> by default)?</p></dd>
+
+
 <dt>show.labels</dt>
 <dd><p>Are the labels displayed on the axes (<code>TRUE</code> by default)?</p></dd>
+
+
 <dt>lab.size</dt>
 <dd><p>Force the size of the labels (<code>NULL</code> by default for automatic size).</p></dd>
+
+
 <dt>gradient</dt>
 <dd><p>The palette of color to use in the plot.</p></dd>
+
+
 <dt>type</dt>
 <dd><p>The type of plot. For the moment, only one plot is possible and the default value (<code>NULL</code>) should not be changed.</p></dd>
+
+
 <dt>env</dt>
 <dd><p>The environment where to evaluate the formula. If you don't understand this, you probably don't have to touch this arguments.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>An S3 object of class <code>c("Dissimilarity", "dist")</code>, thus inheriting from <code>dist</code>. A <code>Dissimilarity</code> object is better displayed (specific <code><a href="https://rdrr.io/r/base/print.html" class="external-link">print()</a></code> method), and has also dedicated methods <code><a href="https://rdrr.io/r/base/labels.html" class="external-link">labels()</a></code> (get line and column labels), <code><a href="https://rdrr.io/r/stats/nobs.html" class="external-link">nobs()</a></code> (get number of observations, that is, number of lines or columns), <code>autoplot()</code> (generate a ggplot2 from the matrix) and <code>chart()</code> (generate a chart version of the ggplot2).</p>
+    
+
+<p>An S3 object of class <code>c("Dissimilarity", "dist")</code>, thus inheriting from <code>dist</code>. A <code>Dissimilarity</code> object is better displayed (specific <code><a href="https://rdrr.io/r/base/print.html" class="external-link">print()</a></code> method), and has also dedicated methods <code><a href="https://rdrr.io/r/base/labels.html" class="external-link">labels()</a></code> (get line and column labels), <code><a href="https://rdrr.io/r/stats/nobs.html" class="external-link">nobs()</a></code> (get number of observations, that is, number of lines or columns), <code><a href="https://ggplot2.tidyverse.org/reference/autoplot.html" class="external-link">autoplot()</a></code> (generate a ggplot2 from the matrix) and <code><a href="https://www.sciviews.org/svMisc/reference/chart.html" class="external-link">chart()</a></code> (generate a chart version of the ggplot2).</p>
     </div>
     <div id="see-also">
     <h2>See also</h2>
@@ -176,13 +213,13 @@ a data frame, using a unified SciViews::R formula interface.</p>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">SciViews</span><span class="fu">::</span><span class="va"><a href="https://www.sciviews.org/SciViews/reference/SciViews_R.html" class="external-link">R</a></span></span>
-<span class="r-in"><span class="fu">read</span><span class="op">(</span><span class="st">"iris"</span>, package <span class="op">=</span> <span class="st">"datasets"</span><span class="op">)</span> <span class="op">%&gt;.%</span></span>
-<span class="r-in">  <span class="fu">select</span><span class="op">(</span><span class="va">.</span>, <span class="op">-</span><span class="va">species</span><span class="op">)</span> <span class="op">-&gt;</span> <span class="va">iris_num</span>  <span class="co"># Only numeric columns from iris</span></span>
-<span class="r-in"><span class="co"># Compare the 150 flowers and nicely print the result</span></span>
-<span class="r-in"><span class="fu">dissimilarity</span><span class="op">(</span><span class="va">iris_num</span>, method <span class="op">=</span> <span class="st">"manhattan"</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">SciViews</span><span class="fu">::</span><span class="va"><a href="https://www.sciviews.org/SciViews/reference/SciViews_R.html" class="external-link">R</a></span></span></span>
+<span class="r-in"><span><span class="va">iris</span> <span class="op">&lt;-</span> <span class="fu">read</span><span class="op">(</span><span class="st">"iris"</span>, package <span class="op">=</span> <span class="st">"datasets"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">iris_num</span> <span class="op">&lt;-</span> <span class="va">iris</span><span class="op">[</span>, <span class="op">-</span><span class="fl">5</span><span class="op">]</span> <span class="co"># Only numeric columns from iris</span></span></span>
+<span class="r-in"><span><span class="co"># Compare the 150 flowers and nicely print the result</span></span></span>
+<span class="r-in"><span><span class="fu">dissimilarity</span><span class="op">(</span><span class="va">iris_num</span>, method <span class="op">=</span> <span class="st">"manhattan"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dissimilarity matrix with metric: manhattan</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 150 × 150</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A data.frame: 150 x 150</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    labels `1`   `2`   `3`   `4`   `5`   `6`   `7`   `8`   `9`   `10`  `11` </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dst&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dst&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dst&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dst&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dst&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dst&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dst&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dst&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dst&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dst&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dst&gt;</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 1                                                                       </span>
@@ -202,28 +239,28 @@ a data frame, using a unified SciViews::R formula interface.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   `32` &lt;dst&gt;, `33` &lt;dst&gt;, `34` &lt;dst&gt;, `35` &lt;dst&gt;, `36` &lt;dst&gt;, `37` &lt;dst&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   `38` &lt;dst&gt;, `39` &lt;dst&gt;, `40` &lt;dst&gt;, `41` &lt;dst&gt;, `42` &lt;dst&gt;, `43` &lt;dst&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   `44` &lt;dst&gt;, `45` &lt;dst&gt;, `46` &lt;dst&gt;, `47` &lt;dst&gt;, `48` &lt;dst&gt;, `49` &lt;dst&gt;, …</span></span>
-<span class="r-in"><span class="co"># Compare the measurements by transposing and scaling them first</span></span>
-<span class="r-in"><span class="va">iris_dist</span> <span class="op">&lt;-</span> <span class="fu">dissimilarity</span><span class="op">(</span><span class="va">iris_num</span>, method <span class="op">=</span> <span class="st">"euclidean"</span>,</span>
-<span class="r-in">  scale <span class="op">=</span> <span class="cn">TRUE</span>, transpose <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">iris_dist</span></span>
+<span class="r-in"><span><span class="co"># Compare the measurements by transposing and scaling them first</span></span></span>
+<span class="r-in"><span><span class="va">iris_dist</span> <span class="op">&lt;-</span> <span class="fu">dissimilarity</span><span class="op">(</span><span class="va">iris_num</span>, method <span class="op">=</span> <span class="st">"euclidean"</span>,</span></span>
+<span class="r-in"><span>  scale <span class="op">=</span> <span class="cn">TRUE</span>, transpose <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">iris_dist</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dissimilarity matrix with metric: euclidean (transposed then scaled data)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 4 × 4</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A data.frame: 4 x 4</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   labels       sepal_length sepal_width petal_length</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dst&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dst&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dst&gt;</span>       </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> sepal_length                                      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> sepal_width  17.254                               </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> petal_length 13.802       12.063                  </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> petal_width  27.409       12.340      16.209      </span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/class.html" class="external-link">class</a></span><span class="op">(</span><span class="va">iris_dist</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/class.html" class="external-link">class</a></span><span class="op">(</span><span class="va">iris_dist</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "Dissimilarity" "dist"         </span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/labels.html" class="external-link">labels</a></span><span class="op">(</span><span class="va">iris_dist</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/labels.html" class="external-link">labels</a></span><span class="op">(</span><span class="va">iris_dist</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "sepal_length" "sepal_width"  "petal_length" "petal_width" </span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/stats/nobs.html" class="external-link">nobs</a></span><span class="op">(</span><span class="va">iris_dist</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/nobs.html" class="external-link">nobs</a></span><span class="op">(</span><span class="va">iris_dist</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 4</span>
-<span class="r-in"><span class="co"># specific plots</span></span>
-<span class="r-in"><span class="fu">autoplot</span><span class="op">(</span><span class="va">iris_dist</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="co"># specific plots</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/autoplot.html" class="external-link">autoplot</a></span><span class="op">(</span><span class="va">iris_dist</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dissimilarity-1.png" alt="" width="700" height="433"></span>
-<span class="r-in"><span class="fu">chart</span><span class="op">(</span><span class="va">iris_dist</span>, gradient <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>low <span class="op">=</span> <span class="st">"green"</span>, mid <span class="op">=</span> <span class="st">"white"</span>, high <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://www.sciviews.org/svMisc/reference/chart.html" class="external-link">chart</a></span><span class="op">(</span><span class="va">iris_dist</span>, gradient <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>low <span class="op">=</span> <span class="st">"green"</span>, mid <span class="op">=</span> <span class="st">"white"</span>, high <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dissimilarity-2.png" alt="" width="700" height="433"></span>
 </code></pre></div>
     </div>

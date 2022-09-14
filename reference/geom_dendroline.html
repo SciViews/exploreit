@@ -58,7 +58,7 @@ dendrogram type) at height h to depict where it is cut into groups."><meta prope
   </a>
 </li>
       </ul><div class="navbar-title">
-        <a class="navbar-brand" href="../index.html"><p class="h2">exploreit <small>v0.1.0</small></p></a>
+        <a class="navbar-brand" href="../index.html"><p class="h2">exploreit <small>v1.0.0</small></p></a>
       </div>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -82,32 +82,35 @@ dendrogram type) at height <code>h</code> to depict where it is cut into groups.
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">geom_dendroline</span><span class="op">(</span><span class="va">h</span>, <span class="va">...</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">geom_dendroline</span><span class="op">(</span><span class="va">h</span>, <span class="va">...</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>h</dt>
 <dd><p>The height to cut the dendrogram.</p></dd>
+
+
 <dt>...</dt>
-<dd><p>Further arguments passed to <code>geom_hline()</code> (this is really a convenience function that builds on it).</p></dd>
+<dd><p>Further arguments passed to <code><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html" class="external-link">geom_hline()</a></code> (this is really a convenience function that builds on it).</p></dd>
+
 </dl></div>
     <div id="see-also">
     <h2>See also</h2>
-    <div class="dont-index"><p><code>geom_hline()</code></p></div>
+    <div class="dont-index"><p><code><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html" class="external-link">geom_hline()</a></code></p></div>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">SciViews</span><span class="fu">::</span><span class="va"><a href="https://www.sciviews.org/SciViews/reference/SciViews_R.html" class="external-link">R</a></span></span>
-<span class="r-in"><span class="va">iris</span> <span class="op">&lt;-</span> <span class="fu">read</span><span class="op">(</span><span class="st">"iris"</span>, package <span class="op">=</span> <span class="st">"datasets"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">iris</span> <span class="op">%&gt;.%</span></span>
-<span class="r-in">  <span class="fu">select</span><span class="op">(</span><span class="va">.</span>, <span class="op">-</span><span class="va">species</span><span class="op">)</span> <span class="op">%&gt;.%</span></span>
-<span class="r-in">  <span class="fu"><a href="dissimilarity.html">dissimilarity</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span> <span class="op">%&gt;.%</span></span>
-<span class="r-in">  <span class="fu"><a href="cluster.html">cluster</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span> <span class="op">-&gt;</span></span>
-<span class="r-in">  <span class="va">iris_cluster</span></span>
-<span class="r-in"><span class="fu">chart</span><span class="op">(</span><span class="va">iris_cluster</span><span class="op">)</span> <span class="op">+</span></span>
-<span class="r-in">  <span class="fu">geom_dendroline</span><span class="op">(</span>h <span class="op">=</span> <span class="fl">3</span>, color <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">SciViews</span><span class="fu">::</span><span class="va"><a href="https://www.sciviews.org/SciViews/reference/SciViews_R.html" class="external-link">R</a></span></span></span>
+<span class="r-in"><span><span class="va">iris</span> <span class="op">&lt;-</span> <span class="fu">read</span><span class="op">(</span><span class="st">"iris"</span>, package <span class="op">=</span> <span class="st">"datasets"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">iris_num</span> <span class="op">&lt;-</span> <span class="va">iris</span><span class="op">[</span>, <span class="op">-</span><span class="fl">5</span><span class="op">]</span></span></span>
+<span class="r-in"><span><span class="va">iris_num</span> <span class="op">%&gt;.%</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="dissimilarity.html">dissimilarity</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span> <span class="op">%&gt;.%</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="cluster.html">cluster</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span> <span class="op">-&gt;</span></span></span>
+<span class="r-in"><span>  <span class="va">iris_cluster</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://www.sciviews.org/svMisc/reference/chart.html" class="external-link">chart</a></span><span class="op">(</span><span class="va">iris_cluster</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span>  <span class="fu">geom_dendroline</span><span class="op">(</span>h <span class="op">=</span> <span class="fl">3</span>, color <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="geom_dendroline-1.png" alt="" width="700" height="433"></span>
 </code></pre></div>
     </div>

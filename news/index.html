@@ -57,7 +57,7 @@
   </a>
 </li>
       </ul><div class="navbar-title">
-        <a class="navbar-brand" href="../index.html"><p class="h2">exploreit <small>v0.1.0</small></p></a>
+        <a class="navbar-brand" href="../index.html"><p class="h2">exploreit <small>v1.0.0</small></p></a>
       </div>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -76,20 +76,29 @@
 
     <div class="section level2">
 <h2 class="page-header" data-toc-text="0.1.0" id="exploreit-010">exploreit 0.1.0<a class="anchor" aria-label="anchor" href="#exploreit-010"></a></h2>
+<ul><li><p><code><a href="../reference/mfa.html">mfa()</a></code> and <code><a href="https://www.sciviews.org/svMisc/reference/chart.html" class="external-link">chart()</a></code> for multiple factorial analysis added.</p></li>
+<li><p><code><a href="../reference/ca.html">ca()</a></code> and <code><a href="https://www.sciviews.org/svMisc/reference/chart.html" class="external-link">chart()</a></code> for correspondence analysis added.</p></li>
+<li><p><code><a href="../reference/pca.html">pca()</a></code> and <code><a href="https://www.sciviews.org/svMisc/reference/chart.html" class="external-link">chart()</a></code> for PCA added.</p></li>
+<li><p><code><a href="../reference/mds.html">mds()</a></code> and associated methods and functions (<code><a href="../reference/mds.html">shepard()</a></code>) added.</p></li>
+<li><p><code><a href="../reference/k_means.html">k_means()</a></code>, <code><a href="../reference/k_means.html">profile_k()</a></code> and associated methods added.</p></li>
+<li><p>Methods <code><a href="../reference/scale.html">scale()</a></code> for data.frame, data.table and tibble’s tbl_df.</p></li>
+</ul></div>
+    <div class="section level2">
+<h2 class="page-header" data-toc-text="0.1.0" id="exploreit-010-1">exploreit 0.1.0<a class="anchor" aria-label="anchor" href="#exploreit-010-1"></a></h2>
 <ul><li>Functions and methods for hierarchical clustering are added (<code><a href="../reference/dissimilarity.html">dissimilarity()</a></code> and <code><a href="../reference/cluster.html">cluster()</a></code>).</li></ul></div>
     <div class="section level2">
 <h2 class="page-header" data-toc-text="0.0.0.9000" id="exploreit-0009000">exploreit 0.0.0.9000<a class="anchor" aria-label="anchor" href="#exploreit-0009000"></a></h2>
 <ul><li>Added hex sticker (logo) with:</li></ul><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R">
-<span class="fu">SciViews</span><span class="fu">::</span><span class="va"><a href="https://www.sciviews.org/SciViews/reference/SciViews_R.html" class="external-link">R</a></span>
-<span class="va">p</span> <span class="op">&lt;-</span> <span class="fu">chart</span><span class="op">(</span>data <span class="op">=</span> <span class="va">iris</span>, <span class="va">Petal.Length</span> <span class="op">~</span> <span class="va">Petal.Width</span> <span class="op">%col=%</span> <span class="va">Species</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">geom_ellipse</span><span class="op">(</span><span class="op">)</span>
-<span class="va">p</span> <span class="op">&lt;-</span> <span class="va">p</span> <span class="op">+</span> <span class="fu">theme_void</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">hexSticker</span><span class="fu">::</span><span class="fu">theme_transparent</span><span class="op">(</span><span class="op">)</span>
-<span class="va">p</span> <span class="op">&lt;-</span> <span class="va">p</span> <span class="op">+</span> <span class="fu">theme</span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"none"</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/files2.html" class="external-link">dir.create</a></span> <span class="op">(</span><span class="st">"inst/figures"</span>, showWarnings <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span>
-<span class="fu">hexSticker</span><span class="fu">::</span><span class="fu">sticker</span><span class="op">(</span><span class="va">p</span>, package <span class="op">=</span> <span class="st">"exploreit"</span>, p_size <span class="op">=</span> <span class="fl">9</span>, s_x <span class="op">=</span> <span class="fl">1</span>, s_y <span class="op">=</span> <span class="fl">.75</span>,
-  s_width <span class="op">=</span> <span class="fl">1.3</span>, s_height <span class="op">=</span> <span class="fl">0.9</span>, h_fill <span class="op">=</span> <span class="st">"seagreen4"</span>, h_color <span class="op">=</span> <span class="st">"darkgreen"</span>,
-  filename <span class="op">=</span> <span class="st">"inst/figures/exploreit.png"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span></span>
+<span><span class="fu">SciViews</span><span class="fu">::</span><span class="va"><a href="https://www.sciviews.org/SciViews/reference/SciViews_R.html" class="external-link">R</a></span></span>
+<span><span class="va">p</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://www.sciviews.org/svMisc/reference/chart.html" class="external-link">chart</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">iris</span>, <span class="va">Petal.Length</span> <span class="op">~</span> <span class="va">Petal.Width</span> <span class="op">%col=%</span> <span class="va">Species</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html" class="external-link">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">geom_ellipse</span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="va">p</span> <span class="op">&lt;-</span> <span class="va">p</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_void</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu">hexSticker</span><span class="fu">::</span><span class="fu">theme_transparent</span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="va">p</span> <span class="op">&lt;-</span> <span class="va">p</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"none"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/files2.html" class="external-link">dir.create</a></span> <span class="op">(</span><span class="st">"inst/figures"</span>, showWarnings <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span><span class="fu">hexSticker</span><span class="fu">::</span><span class="fu">sticker</span><span class="op">(</span><span class="va">p</span>, package <span class="op">=</span> <span class="st">"exploreit"</span>, p_size <span class="op">=</span> <span class="fl">9</span>, s_x <span class="op">=</span> <span class="fl">1</span>, s_y <span class="op">=</span> <span class="fl">.75</span>,</span>
+<span>  s_width <span class="op">=</span> <span class="fl">1.3</span>, s_height <span class="op">=</span> <span class="fl">0.9</span>, h_fill <span class="op">=</span> <span class="st">"seagreen4"</span>, h_color <span class="op">=</span> <span class="st">"darkgreen"</span>,</span>
+<span>  filename <span class="op">=</span> <span class="st">"inst/figures/exploreit.png"</span><span class="op">)</span></span></code></pre></div>
 <ul><li>Added a <code>NEWS.md</code> file to track changes to the package.</li></ul></div>
   </div>
 

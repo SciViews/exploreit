@@ -57,7 +57,7 @@
   </a>
 </li>
       </ul><div class="navbar-title">
-        <a class="navbar-brand" href="../index.html"><p class="h2">exploreit <small>v0.1.0</small></p></a>
+        <a class="navbar-brand" href="../index.html"><p class="h2">exploreit <small>v1.0.0</small></p></a>
       </div>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -80,30 +80,35 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">as.dissimilarity</span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="fu">as_dissimilarity</span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for matrix</span>
-<span class="fu">as.dissimilarity</span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for dist</span>
-<span class="fu">as.dissimilarity</span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for Dissimilarity</span>
-<span class="fu">as.dissimilarity</span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">as.dissimilarity</span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">as_dissimilarity</span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for matrix</span></span>
+<span><span class="fu">as.dissimilarity</span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for dist</span></span>
+<span><span class="fu">as.dissimilarity</span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for Dissimilarity</span></span>
+<span><span class="fu">as.dissimilarity</span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>x</dt>
 <dd><p>An object to coerce into a <code>Dissimilarity</code> object.</p></dd>
+
+
 <dt>...</dt>
 <dd><p>Further argument passed to the coercion method.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>A <code>Dissimilarity</code> object.</p>
+    
+
+<p>A <code>Dissimilarity</code> object.</p>
     </div>
     <div id="see-also">
     <h2>See also</h2>
@@ -112,32 +117,40 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">SciViews</span><span class="fu">::</span><span class="va"><a href="https://www.sciviews.org/SciViews/reference/SciViews_R.html" class="external-link">R</a></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Registered S3 method overwritten by 'svMisc':</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span>   method             from </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span>   $.subsettable_type chart</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ── <span style="font-weight: bold;">Attaching packages</span> ───────────────────────────────────── SciViews::R 1.1.2 ──</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">SciViews </span> 1.1.2       <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">purrr    </span> 0.3.4  </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">chart    </span> 1.3.0       <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">readr    </span> 2.1.2  </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">flow     </span> 1.1.0       <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">tidyr    </span> 1.2.0  </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">data.io  </span> 1.3.0       <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">tibble   </span> 3.1.7  </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">svMisc   </span> 1.3.0       <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">ggplot2  </span> 3.3.6  </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">forcats  </span> 0.5.1       <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">tidyverse</span> 1.3.1  </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">stringr  </span> 1.4.0       <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">lattice  </span> 0.20.45</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">dplyr    </span> 1.0.9       <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">MASS     </span> 7.3.57 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> ── <span style="font-weight: bold;">Conflicts</span> ────────────────────────────────────────── tidyverse_conflicts() ──</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">dplyr</span>::<span style="color: #00BB00;">filter()</span> masks <span style="color: #0000BB;">stats</span>::filter()</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">dplyr</span>::<span style="color: #00BB00;">lag()</span>    masks <span style="color: #0000BB;">stats</span>::lag()</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">dplyr</span>::<span style="color: #00BB00;">select()</span> masks <span style="color: #0000BB;">MASS</span>::select()</span>
-<span class="r-in"><span class="fu">read</span><span class="op">(</span><span class="st">"iris"</span>, package <span class="op">=</span> <span class="st">"datasets"</span><span class="op">)</span> <span class="op">%&gt;.%</span></span>
-<span class="r-in">  <span class="fu">select</span><span class="op">(</span><span class="va">.</span>, <span class="op">-</span><span class="va">species</span><span class="op">)</span> <span class="op">-&gt;</span> <span class="va">iris_num</span>  <span class="co"># Only numeric columns from iris</span></span>
-<span class="r-in"><span class="co"># Construct a dist object</span></span>
-<span class="r-in"><span class="va">iris_dist</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/dist.html" class="external-link">dist</a></span><span class="op">(</span><span class="va">iris_num</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/class.html" class="external-link">class</a></span><span class="op">(</span><span class="va">iris_dist</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">SciViews</span><span class="fu">::</span><span class="va"><a href="https://www.sciviews.org/SciViews/reference/SciViews_R.html" class="external-link">R</a></span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ── <span style="font-weight: bold;">Attaching packages</span> ───────────────────────────────────── SciViews::R 1.4.0 ──</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">SciViews  </span> 1.4.0        <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">dtplyr    </span> 1.2.2   </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">chart     </span> 1.4.0        <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">dplyr     </span> 1.0.10  </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">data.io   </span> 1.4.1        <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">tidyr     </span> 1.2.1   </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">svFlow    </span> 1.2.1        <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">tibble    </span> 3.1.8   </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">svBase    </span> 1.2.1        <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">ggplot2   </span> 3.3.6   </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">svMisc    </span> 1.3.0        <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">data.table</span> 1.14.2  </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">fs        </span> 1.5.2        <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">lattice   </span> 0.20.45 </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">collapse  </span> 1.8.8        <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">MASS      </span> 7.3.58.<span style="color: #BB0000;">1</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">forcats   </span> 0.5.2        <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">rlang     </span> 1.0.5   </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">broom     </span> 1.0.1        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ── <span style="font-weight: bold;">Conflicts</span> ─────────────────────────────────────────── SciViews_conflicts() ──</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">svFlow</span>::<span style="color: #00BB00;">!!()</span>     masks <span style="color: #0000BB;">rlang</span>::!!()</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">data.table</span>::<span style="color: #00BB00;">:=()</span> masks <span style="color: #0000BB;">rlang</span>:::=()</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">svMisc</span>::<span style="color: #00BB00;">?()</span>      masks <span style="color: #0000BB;">utils</span>::?()</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">collapse</span>::<span style="color: #00BB00;">D()</span>    masks <span style="color: #0000BB;">stats</span>::D()</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">dplyr</span>::<span style="color: #00BB00;">between()</span> masks <span style="color: #0000BB;">data.table</span>::between()</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">dplyr</span>::<span style="color: #00BB00;">filter()</span>  masks <span style="color: #0000BB;">stats</span>::filter()</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">dplyr</span>::<span style="color: #00BB00;">first()</span>   masks <span style="color: #0000BB;">data.table</span>::first()</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">dplyr</span>::<span style="color: #00BB00;">lag()</span>     masks <span style="color: #0000BB;">stats</span>::lag()</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">dplyr</span>::<span style="color: #00BB00;">last()</span>    masks <span style="color: #0000BB;">data.table</span>::last()</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">dplyr</span>::<span style="color: #00BB00;">select()</span>  masks <span style="color: #0000BB;">MASS</span>::select()</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">data.io</span>::<span style="color: #00BB00;">write()</span> masks <span style="color: #0000BB;">base</span>::write()</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ── Default data frame object (dtx) ─────────────────────────────── data.table ──</span>
+<span class="r-in"><span><span class="va">iris</span> <span class="op">&lt;-</span> <span class="fu">read</span><span class="op">(</span><span class="st">"iris"</span>, package <span class="op">=</span> <span class="st">"datasets"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">iris_num</span> <span class="op">&lt;-</span> <span class="va">iris</span><span class="op">[</span>, <span class="op">-</span><span class="fl">5</span><span class="op">]</span> <span class="co"># Only numeric columns from iris</span></span></span>
+<span class="r-in"><span><span class="co"># Construct a dist object</span></span></span>
+<span class="r-in"><span><span class="va">iris_dist</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/dist.html" class="external-link">dist</a></span><span class="op">(</span><span class="va">iris_num</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/class.html" class="external-link">class</a></span><span class="op">(</span><span class="va">iris_dist</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "dist"</span>
-<span class="r-in"><span class="co"># Convert it into a Dissimilarity object</span></span>
-<span class="r-in"><span class="va">iris_dis</span> <span class="op">&lt;-</span> <span class="fu">as.dissimilarity</span><span class="op">(</span><span class="va">iris_dist</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/class.html" class="external-link">class</a></span><span class="op">(</span><span class="va">iris_dis</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="co"># Convert it into a Dissimilarity object</span></span></span>
+<span class="r-in"><span><span class="va">iris_dis</span> <span class="op">&lt;-</span> <span class="fu">as.dissimilarity</span><span class="op">(</span><span class="va">iris_dist</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/class.html" class="external-link">class</a></span><span class="op">(</span><span class="va">iris_dis</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "Dissimilarity" "dist"         </span>
 </code></pre></div>
     </div>

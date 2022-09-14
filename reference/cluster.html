@@ -59,7 +59,7 @@ that can be cut at a certain level to form the final clusters."><meta property="
   </a>
 </li>
       </ul><div class="navbar-title">
-        <a class="navbar-brand" href="../index.html"><p class="h2">exploreit <small>v0.1.0</small></p></a>
+        <a class="navbar-brand" href="../index.html"><p class="h2">exploreit <small>v1.0.0</small></p></a>
       </div>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -84,68 +84,74 @@ that can be cut at a certain level to form the final clusters.</p>
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">cluster</span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for default</span>
-<span class="fu">cluster</span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for dist</span>
-<span class="fu">cluster</span><span class="op">(</span><span class="va">x</span>, method <span class="op">=</span> <span class="st">"complete"</span>, fun <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for Cluster</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">object</span>, max.level <span class="op">=</span> <span class="cn">NA</span>, digits.d <span class="op">=</span> <span class="fl">3L</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for Cluster</span>
-<span class="fu"><a href="https://rdrr.io/r/base/labels.html" class="external-link">labels</a></span><span class="op">(</span><span class="va">object</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for Cluster</span>
-<span class="fu"><a href="https://rdrr.io/r/stats/nobs.html" class="external-link">nobs</a></span><span class="op">(</span><span class="va">object</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for Cluster</span>
-<span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">object</span>, k <span class="op">=</span> <span class="cn">NULL</span>, h <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for Cluster</span>
-<span class="fu"><a href="https://generics.r-lib.org/reference/augment.html" class="external-link">augment</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">data</span>, k <span class="op">=</span> <span class="cn">NULL</span>, h <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span>
-
-<span class="co"># S3 method for Cluster</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span>
-  <span class="va">x</span>,
-  <span class="va">y</span>,
-  labels <span class="op">=</span> <span class="cn">TRUE</span>,
-  hang <span class="op">=</span> <span class="op">-</span><span class="fl">1</span>,
-  check <span class="op">=</span> <span class="cn">TRUE</span>,
-  type <span class="op">=</span> <span class="st">"vertical"</span>,
-  lab <span class="op">=</span> <span class="st">"Height"</span>,
-  <span class="va">...</span>
-<span class="op">)</span>
-
-<span class="co"># S3 method for Cluster</span>
-<span class="fu">autoplot</span><span class="op">(</span>
-  <span class="va">object</span>,
-  labels <span class="op">=</span> <span class="cn">TRUE</span>,
-  type <span class="op">=</span> <span class="st">"vertical"</span>,
-  circ.text.size <span class="op">=</span> <span class="fl">3</span>,
-  theme <span class="op">=</span> <span class="fu">theme_sciviews</span><span class="op">(</span><span class="op">)</span>,
-  xlab <span class="op">=</span> <span class="st">""</span>,
-  ylab <span class="op">=</span> <span class="st">"Height"</span>,
-  <span class="va">...</span>
-<span class="op">)</span>
-
-<span class="co"># S3 method for Cluster</span>
-<span class="fu">chart</span><span class="op">(</span><span class="va">data</span>, <span class="va">...</span>, type <span class="op">=</span> <span class="cn">NULL</span>, env <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">cluster</span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for default</span></span>
+<span><span class="fu">cluster</span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for dist</span></span>
+<span><span class="fu">cluster</span><span class="op">(</span><span class="va">x</span>, method <span class="op">=</span> <span class="st">"complete"</span>, fun <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for Cluster</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">object</span>, max.level <span class="op">=</span> <span class="cn">NA</span>, digits.d <span class="op">=</span> <span class="fl">3L</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for Cluster</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/labels.html" class="external-link">labels</a></span><span class="op">(</span><span class="va">object</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for Cluster</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/nobs.html" class="external-link">nobs</a></span><span class="op">(</span><span class="va">object</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for Cluster</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">object</span>, k <span class="op">=</span> <span class="cn">NULL</span>, h <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for Cluster</span></span>
+<span><span class="fu"><a href="https://generics.r-lib.org/reference/augment.html" class="external-link">augment</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">data</span>, k <span class="op">=</span> <span class="cn">NULL</span>, h <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for Cluster</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span></span>
+<span>  <span class="va">x</span>,</span>
+<span>  <span class="va">y</span>,</span>
+<span>  labels <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  hang <span class="op">=</span> <span class="op">-</span><span class="fl">1</span>,</span>
+<span>  check <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  type <span class="op">=</span> <span class="st">"vertical"</span>,</span>
+<span>  lab <span class="op">=</span> <span class="st">"Height"</span>,</span>
+<span>  <span class="va">...</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for Cluster</span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/autoplot.html" class="external-link">autoplot</a></span><span class="op">(</span></span>
+<span>  <span class="va">object</span>,</span>
+<span>  labels <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  type <span class="op">=</span> <span class="st">"vertical"</span>,</span>
+<span>  circ.text.size <span class="op">=</span> <span class="fl">3</span>,</span>
+<span>  theme <span class="op">=</span> <span class="fu"><a href="https://www.sciviews.org/svMisc/reference/chart_theme.html" class="external-link">theme_sciviews</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span>  xlab <span class="op">=</span> <span class="st">""</span>,</span>
+<span>  ylab <span class="op">=</span> <span class="st">"Height"</span>,</span>
+<span>  <span class="va">...</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for Cluster</span></span>
+<span><span class="fu"><a href="https://www.sciviews.org/svMisc/reference/chart.html" class="external-link">chart</a></span><span class="op">(</span><span class="va">data</span>, <span class="va">...</span>, type <span class="op">=</span> <span class="cn">NULL</span>, env <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>x</dt>
 <dd><p>A <code>Dissimilarity</code> object.</p></dd>
+
+
 <dt>...</dt>
 <dd><p>Further arguments for the methods (see their respective manpages).</p></dd>
+
+
 <dt>method</dt>
 <dd><p>The agglomeration method used. <code>"complete"</code> by default. Other
 options depend on the function <code>fun =</code> used. For the default one, you can
 also use <code>"single"</code>, <code>"average"</code>, <code>"mcquitty"</code>, <code>"ward.D"</code>, <code>"ward.D2"</code>,
 <code>"centroid"</code>, or <code>"median"</code>.</p></dd>
+
+
 <dt>fun</dt>
 <dd><p>The function to use to do the calculation. By default, it is
 <code><a href="https://rdrr.io/pkg/fastcluster/man/hclust.html" class="external-link">fastcluster::hclust()</a></code>, an fast and memory-optimized version of the default
@@ -154,53 +160,90 @@ R function <code><a href="https://rdrr.io/r/stats/hclust.html" class="external-l
 returns an <code>hclust</code>object, or something convertible to <code>hclust</code> with
 <code><a href="https://rdrr.io/r/stats/as.hclust.html" class="external-link">as.hclust()</a></code>. The default (<code>NULL</code>) means that the <strong>fastcluster</strong>
 implementation is used.</p></dd>
+
+
 <dt>object</dt>
 <dd><p>A <code>cluster</code> object.</p></dd>
+
+
 <dt>max.level</dt>
 <dd><p>The maximum level to present.</p></dd>
+
+
 <dt>digits.d</dt>
 <dd><p>The number of digits to print.</p></dd>
+
+
 <dt>k</dt>
 <dd><p>The number of clusters to get.</p></dd>
+
+
 <dt>h</dt>
 <dd><p>The height where the dendrogram should be cut (give either <code>k =</code> or
 <code>h = </code>, but not both at the same time).</p></dd>
+
+
 <dt>data</dt>
 <dd><p>The original dataset</p></dd>
+
+
 <dt>y</dt>
 <dd><p>Do not use it.</p></dd>
+
+
 <dt>labels</dt>
 <dd><p>Should we show the labels (<code>TRUE</code> by default).</p></dd>
+
+
 <dt>hang</dt>
 <dd><p>The fraction of the plot height at which labels should hang below
 (by default, -1 meaning labels are all placed at the extreme of the plot).</p></dd>
+
+
 <dt>check</dt>
 <dd><p>The validity of the <code>cluster</code> object is verified first to avoid
 crashing R. You can put it at <code>FALSE</code> to speed up computation if you are
 really sure your object is valid.</p></dd>
+
+
 <dt>type</dt>
 <dd><p>The type of dendrogram, by default, <code>"vertical"</code>. It could also
 be <code>"horizontal"</code> (more readable when there are many observations), or
 <code>"circular"</code> (even more readable with many observations, but more difficult
 to chose the cutting level).</p></dd>
+
+
 <dt>lab</dt>
 <dd><p>The label of the y axis (vertical) or x axis (horizontal), by
 default <code>"Height"</code>.</p></dd>
+
+
 <dt>circ.text.size</dt>
 <dd><p>Size of the text for a circular dendrogram</p></dd>
+
+
 <dt>theme</dt>
-<dd><p>The ggplot2 theme to use, by default, it is <code>theme_sciviews()</code>.</p></dd>
+<dd><p>The ggplot2 theme to use, by default, it is <code><a href="https://www.sciviews.org/svMisc/reference/chart_theme.html" class="external-link">theme_sciviews()</a></code>.</p></dd>
+
+
 <dt>xlab</dt>
 <dd><p>Label of the x axis (nothing by default)</p></dd>
+
+
 <dt>ylab</dt>
 <dd><p>Label of the y axis, by default <code>"Height"</code>.</p></dd>
+
+
 <dt>env</dt>
 <dd><p>The environment where to evaluate formulas. If you don't
 understand this, it means you should not touch it!</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>A <code>Cluster</code> object inheriting from <code>hclust</code>. Specific methods are: <code><a href="https://rdrr.io/r/utils/str.html" class="external-link">str()</a></code> (compact display of the object content), <code><a href="https://rdrr.io/r/base/labels.html" class="external-link">labels()</a></code> (get the labels for the observations), <code><a href="https://rdrr.io/r/stats/nobs.html" class="external-link">nobs()</a></code> (number of observations), <code><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict()</a></code> (get the clusters, given a cutting level), <code><a href="https://generics.r-lib.org/reference/augment.html" class="external-link">augment()</a></code> (add the groups to the original data frame or tibble), <code><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot()</a></code> (create a dendrogram as base R plot), <code>autoplot()</code> (create a dendrogram as a ggplot2), and <code>chart()</code> (create a dendrogram as a chart variant of a ggplot2).</p>
+    
+
+<p>A <code>Cluster</code> object inheriting from <code>hclust</code>. Specific methods are: <code><a href="https://rdrr.io/r/utils/str.html" class="external-link">str()</a></code> (compact display of the object content), <code><a href="https://rdrr.io/r/base/labels.html" class="external-link">labels()</a></code> (get the labels for the observations), <code><a href="https://rdrr.io/r/stats/nobs.html" class="external-link">nobs()</a></code> (number of observations), <code><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict()</a></code> (get the clusters, given a cutting level), <code><a href="https://generics.r-lib.org/reference/augment.html" class="external-link">augment()</a></code> (add the groups to the original data frame or tibble), <code><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot()</a></code> (create a dendrogram as base R plot), <code><a href="https://ggplot2.tidyverse.org/reference/autoplot.html" class="external-link">autoplot()</a></code> (create a dendrogram as a ggplot2), and <code><a href="https://www.sciviews.org/svMisc/reference/chart.html" class="external-link">chart()</a></code> (create a dendrogram as a chart variant of a ggplot2).</p>
     </div>
     <div id="see-also">
     <h2>See also</h2>
@@ -209,12 +252,12 @@ understand this, it means you should not touch it!</p></dd>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">SciViews</span><span class="fu">::</span><span class="va"><a href="https://www.sciviews.org/SciViews/reference/SciViews_R.html" class="external-link">R</a></span></span>
-<span class="r-in"><span class="va">iris</span> <span class="op">&lt;-</span> <span class="fu">read</span><span class="op">(</span><span class="st">"iris"</span>, package <span class="op">=</span> <span class="st">"datasets"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">iris_num</span> <span class="op">&lt;-</span> <span class="fu">select</span><span class="op">(</span><span class="va">iris</span>, <span class="op">-</span><span class="va">species</span><span class="op">)</span> <span class="co"># Only numeric columns from iris</span></span>
-<span class="r-in"><span class="co"># Cluster the 150 flowers</span></span>
-<span class="r-in"><span class="va">iris_dis</span> <span class="op">&lt;-</span> <span class="fu"><a href="dissimilarity.html">dissimilarity</a></span><span class="op">(</span><span class="va">iris_num</span>, method <span class="op">=</span> <span class="st">"euclidean"</span>, scale <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span class="r-in"><span class="op">(</span><span class="va">iris_clust</span> <span class="op">&lt;-</span> <span class="fu">cluster</span><span class="op">(</span><span class="va">iris_dis</span>, method <span class="op">=</span> <span class="st">"complete"</span><span class="op">)</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">SciViews</span><span class="fu">::</span><span class="va"><a href="https://www.sciviews.org/SciViews/reference/SciViews_R.html" class="external-link">R</a></span></span></span>
+<span class="r-in"><span><span class="va">iris</span> <span class="op">&lt;-</span> <span class="fu">read</span><span class="op">(</span><span class="st">"iris"</span>, package <span class="op">=</span> <span class="st">"datasets"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">iris_num</span> <span class="op">&lt;-</span> <span class="va">iris</span><span class="op">[</span>, <span class="op">-</span><span class="fl">5</span><span class="op">]</span> <span class="co"># Only numeric columns from iris</span></span></span>
+<span class="r-in"><span><span class="co"># Cluster the 150 flowers</span></span></span>
+<span class="r-in"><span><span class="va">iris_dis</span> <span class="op">&lt;-</span> <span class="fu"><a href="dissimilarity.html">dissimilarity</a></span><span class="op">(</span><span class="va">iris_num</span>, method <span class="op">=</span> <span class="st">"euclidean"</span>, scale <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="op">(</span><span class="va">iris_clust</span> <span class="op">&lt;-</span> <span class="fu">cluster</span><span class="op">(</span><span class="va">iris_dis</span>, method <span class="op">=</span> <span class="st">"complete"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Call:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> cluster.dist(x = iris_dis, method = "complete")</span>
@@ -223,7 +266,7 @@ understand this, it means you should not touch it!</p></dd>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Distance         : euclidean </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of objects: 150 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">iris_clust</span><span class="op">)</span> <span class="co"># More useful</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">iris_clust</span><span class="op">)</span> <span class="co"># More useful</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> --[dendrogram w/ 2 branches and 150 members at h = 6.51]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   |--[dendrogram w/ 2 branches and 77 members at h = 4.07]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   |  |--[dendrogram w/ 2 branches and 66 members at h = 2.55]</span>
@@ -523,7 +566,7 @@ understand this, it means you should not touch it!</p></dd>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                        `--[dendrogram w/ 2 branches and 2 members at h = 0.262]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                           |--leaf "13" </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                           `--leaf "46" </span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">iris_clust</span>, max.level <span class="op">=</span> <span class="fl">3L</span><span class="op">)</span> <span class="co"># Only the top of the dendrogram</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">iris_clust</span>, max.level <span class="op">=</span> <span class="fl">3L</span><span class="op">)</span> <span class="co"># Only the top of the dendrogram</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> --[dendrogram w/ 2 branches and 150 members at h = 6.51]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   |--[dendrogram w/ 2 branches and 77 members at h = 4.07]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   |  |--[dendrogram w/ 2 branches and 66 members at h = 2.55]</span>
@@ -539,37 +582,37 @@ understand this, it means you should not touch it!</p></dd>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      `--[dendrogram w/ 2 branches and 49 members at h = 3.79]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>         |--[dendrogram w/ 2 branches and 7 members at h = 1.39] ..</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>         `--[dendrogram w/ 2 branches and 42 members at h = 2.26] ..</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># Dendrogram with base R graphics</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">iris_clust</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># Dendrogram with base R graphics</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">iris_clust</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="cluster-1.png" alt="" width="700" height="433"></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">iris_clust</span>, labels <span class="op">=</span> <span class="cn">FALSE</span>, hang <span class="op">=</span> <span class="fl">0.1</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>h <span class="op">=</span> <span class="fl">3.5</span>, col <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">iris_clust</span>, labels <span class="op">=</span> <span class="cn">FALSE</span>, hang <span class="op">=</span> <span class="fl">0.1</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>h <span class="op">=</span> <span class="fl">3.5</span>, col <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="cluster-2.png" alt="" width="700" height="433"></span>
-<span class="r-in"><span class="co"># Horizontal dendrogram</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">iris_clust</span>, type <span class="op">=</span> <span class="st">"horizontal"</span>, labels <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>v <span class="op">=</span> <span class="fl">3.5</span>, col <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="co"># Horizontal dendrogram</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">iris_clust</span>, type <span class="op">=</span> <span class="st">"horizontal"</span>, labels <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>v <span class="op">=</span> <span class="fl">3.5</span>, col <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="cluster-3.png" alt="" width="700" height="433"></span>
-<span class="r-in"><span class="co"># Circular dendrogram</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">iris_clust</span>, type <span class="op">=</span> <span class="st">"circular"</span>, labels <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="circle.html">circle</a></span><span class="op">(</span>d <span class="op">=</span> <span class="fl">3.5</span>, col <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="co"># Circular dendrogram</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">iris_clust</span>, type <span class="op">=</span> <span class="st">"circular"</span>, labels <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="circle.html">circle</a></span><span class="op">(</span>d <span class="op">=</span> <span class="fl">3.5</span>, col <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="cluster-4.png" alt="" width="700" height="433"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># Chart version of the dendrogram</span></span>
-<span class="r-in"><span class="fu">chart</span><span class="op">(</span><span class="va">iris_clust</span><span class="op">)</span> <span class="op">+</span></span>
-<span class="r-in">  <span class="fu"><a href="geom_dendroline.html">geom_dendroline</a></span><span class="op">(</span>h <span class="op">=</span> <span class="fl">3.5</span>, color <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># Chart version of the dendrogram</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://www.sciviews.org/svMisc/reference/chart.html" class="external-link">chart</a></span><span class="op">(</span><span class="va">iris_clust</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="geom_dendroline.html">geom_dendroline</a></span><span class="op">(</span>h <span class="op">=</span> <span class="fl">3.5</span>, color <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="cluster-5.png" alt="" width="700" height="433"></span>
-<span class="r-in"><span class="co"># Horizontal dendrogram and without labels</span></span>
-<span class="r-in"><span class="va">chart</span><span class="op">$</span><span class="fu">horizontal</span><span class="op">(</span><span class="va">iris_clust</span>, labels <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="op">+</span></span>
-<span class="r-in">  <span class="fu"><a href="geom_dendroline.html">geom_dendroline</a></span><span class="op">(</span>h <span class="op">=</span> <span class="fl">3.5</span>, color <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="co"># Horizontal dendrogram and without labels</span></span></span>
+<span class="r-in"><span><span class="va">chart</span><span class="op">$</span><span class="fu">horizontal</span><span class="op">(</span><span class="va">iris_clust</span>, labels <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="geom_dendroline.html">geom_dendroline</a></span><span class="op">(</span>h <span class="op">=</span> <span class="fl">3.5</span>, color <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="cluster-6.png" alt="" width="700" height="433"></span>
-<span class="r-in"><span class="co"># Circular dendrogram with labels</span></span>
-<span class="r-in"><span class="va">chart</span><span class="op">$</span><span class="fu">circ</span><span class="op">(</span><span class="va">iris_clust</span>, circ.text.size <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op">+</span> <span class="co"># Abbreviate type and change size</span></span>
-<span class="r-in">  <span class="fu"><a href="geom_dendroline.html">geom_dendroline</a></span><span class="op">(</span>h <span class="op">=</span> <span class="fl">3.5</span>, color <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="co"># Circular dendrogram with labels</span></span></span>
+<span class="r-in"><span><span class="va">chart</span><span class="op">$</span><span class="fu">circ</span><span class="op">(</span><span class="va">iris_clust</span>, circ.text.size <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op">+</span> <span class="co"># Abbreviate type and change size</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="geom_dendroline.html">geom_dendroline</a></span><span class="op">(</span>h <span class="op">=</span> <span class="fl">3.5</span>, color <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="cluster-7.png" alt="" width="700" height="433"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># Get the clusters</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">iris_clust</span>, h <span class="op">=</span> <span class="fl">3.5</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># Get the clusters</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">iris_clust</span>, h <span class="op">=</span> <span class="fl">3.5</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   1   1   1   1   1   2   1   1   1   1   1   1   1   1   2   2   2   1   2   1 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40 </span>
@@ -586,8 +629,8 @@ understand this, it means you should not touch it!</p></dd>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   4   4   5   4   4   5   4   4   4   5   5   5   4   4   4   5   4   4   4   4 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 141 142 143 144 145 146 147 148 149 150 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   4   4   4   4   4   4   4   4   4   4 </span>
-<span class="r-in"><span class="co"># Four clusters</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">iris_clust</span>, k <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="co"># Four clusters</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">iris_clust</span>, k <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40 </span>
@@ -604,8 +647,8 @@ understand this, it means you should not touch it!</p></dd>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   3   3   4   3   3   4   3   3   3   4   4   4   3   3   3   4   3   3   3   3 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 141 142 143 144 145 146 147 148 149 150 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   3   3   3   3   3   3   3   3   3   3 </span>
-<span class="r-in"><span class="co"># Add the clusters to the data (.fitted column added)</span></span>
-<span class="r-in"><span class="fu"><a href="https://generics.r-lib.org/reference/augment.html" class="external-link">augment</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">iris</span>, <span class="va">iris_clust</span>, k <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="co"># Add the clusters to the data (.fitted column added)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://generics.r-lib.org/reference/augment.html" class="external-link">augment</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">iris</span>, <span class="va">iris_clust</span>, k <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 150 × 6</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    sepal_length sepal_width petal_length petal_width species .fitted</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span>
