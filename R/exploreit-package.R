@@ -6,8 +6,10 @@
 #' @importFrom fastcluster hclust
 #' @importFrom tibble tibble add_column as_tibble as_tibble_col
 #' @importFrom data.table as.data.table
-#' @importFrom graphics lines points symbols
+#' @importFrom graphics abline arrows axis box lines par points strheight
+#'   strwidth symbols text
 #' @importFrom grid arrow unit
+#' @importFrom grDevices col2rgb rgb
 #' @importFrom utils str
 #' @importFrom chart chart f_aes theme_sciviews
 #' @importFrom ggplot2 aes annotate autoplot coord_fixed coord_flip coord_polar
@@ -23,6 +25,7 @@
 #' @importFrom SciViews Correlation pcomp
 #' @importFrom rlang set_names
 #' @importFrom svFlow %>.%
+#' @importFrom ca ca
 # The following block is used by usethis to automatically manage
 # roxygen namespace tags. Modify with care!
 ## usethis namespace: start

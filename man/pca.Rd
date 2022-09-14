@@ -10,7 +10,7 @@
 \alias{as.prcomp.default}
 \alias{as.prcomp.prcomp}
 \alias{as.prcomp.princomp}
-\title{Title}
+\title{Principal Component Analysis (PCA)}
 \usage{
 pca(x, ...)
 
@@ -86,7 +86,7 @@ default.}
 \item{scale}{The scale to apply for annotations, 1 by default}
 
 \item{aspect.ratio}{height/width of the plot, 1 by default (for plots where
-the ration height / width does matter)}
+the ratio height / width does matter)}
 
 \item{repel}{Logical. Should repel be used to rearrange points labels?
 \code{FALSE}by default}
@@ -115,7 +115,7 @@ observations}
 \code{\link[=pca]{pca()}} produces a \strong{pcomp} object.
 }
 \description{
-Title
+Principal Component Analysis (PCA)
 }
 \examples{
 library(chart)

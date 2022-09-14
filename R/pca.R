@@ -1,4 +1,4 @@
-#' Title
+#' Principal Component Analysis (PCA)
 #'
 #' @param x A formula or a data frame with numeric columns, for `as.prcomp()`,
 #'   an object to coerce into **prcomp**.
@@ -20,7 +20,7 @@
 #' @param fill The color to fill bars, gray by default
 #' @param scale The scale to apply for annotations, 1 by default
 #' @param aspect.ratio height/width of the plot, 1 by default (for plots where
-#'   the ration height / width does matter)
+#'   the ratio height / width does matter)
 #' @param repel Logical. Should repel be used to rearrange points labels?
 #' `FALSE`by default
 #' @param labels The label of the points (optional)

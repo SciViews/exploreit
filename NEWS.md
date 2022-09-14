@@ -1,5 +1,7 @@
 # exploreit 0.1.0
 
+-   `ca()` and `chart()` for correspondence analysis added.
+
 -   `pca()` and `chart()` for PCA added.
 
 -   `mds()` and associated methods and functions (`shepard()`) added.
