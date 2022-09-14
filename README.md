@@ -2,7 +2,7 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/SciViews/exploreit/workflows/R-CMD-check/badge.svg)](https://github.com/SciViews/exploreit/actions) [![Win build status](https://ci.appveyor.com/api/projects/status/github/SciViews/exploreit?branch=master&svg=true)](https://ci.appveyor.com/project/phgrosjean/exploreit) [![Codecov test coverage](https://codecov.io/gh/SciViews/exploreit/branch/master/graph/badge.svg)](https://codecov.io/gh/SciViews/exploreit?branch=master) [![CRAN status](https://www.r-pkg.org/badges/version/exploreit)](https://CRAN.R-project.org/package=exploreit) [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/SciViews/exploreit/workflows/R-CMD-check/badge.svg)](https://github.com/SciViews/exploreit/actions) [![Codecov test coverage](https://codecov.io/gh/SciViews/exploreit/branch/master/graph/badge.svg)](https://codecov.io/gh/SciViews/exploreit?branch=master) [![CRAN status](https://www.r-pkg.org/badges/version/exploreit)](https://CRAN.R-project.org/package=exploreit) [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 
 <!-- badges: end -->
 
