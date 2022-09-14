@@ -11,11 +11,13 @@
 #' @importFrom grid arrow unit
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom utils str
-#' @importFrom chart chart f_aes theme_sciviews
+#' @importFrom chart chart f_aes theme_sciviews theme_sciviews_lattice
+#' @importFrom lattice trellis.par.get trellis.par.set
 #' @importFrom ggplot2 aes annotate autoplot coord_fixed coord_flip coord_polar
 #'   element_blank element_text expansion fortify geom_col geom_hline geom_line
 #'   geom_point geom_segment geom_step geom_text geom_vline ggplot labs
 #'   scale_x_continuous scale_x_reverse scale_y_continuous scale_y_reverse theme
+#' @importFrom FactoMineR MFA plotellipses
 #' @importFrom factoextra fviz_nbclust
 #' @importFrom broom augment glance tidy
 #' @importFrom vegan goodness metaMDS monoMDS vegdist wcmdscale
@@ -23,7 +25,7 @@
 #' @importFrom ggrepel geom_text_repel
 #' @importFrom ggfortify ggbiplot
 #' @importFrom SciViews Correlation pcomp
-#' @importFrom rlang set_names
+#' @importFrom rlang is_formula f_lhs f_rhs set_names
 #' @importFrom svFlow %>.%
 #' @importFrom ca ca
 # The following block is used by usethis to automatically manage

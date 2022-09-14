@@ -1,5 +1,7 @@
 # exploreit 0.1.0
 
+-   `mfa()` and `chart()` for multiple factorial analysis added.
+
 -   `ca()` and `chart()` for correspondence analysis added.
 
 -   `pca()` and `chart()` for PCA added.
