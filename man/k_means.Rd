@@ -121,5 +121,20 @@ that possibly embeds the original data with the analysis for a richer set
 of methods.
 }
 \examples{
-# TODO...
+data(iris, package = "datasets")
+iris_num <- iris[, -5] # Only numerical variables
+library(chart)
+
+# Profile k is to be taken only asx a (useful) indication!
+profile_k(iris_num) # 2, maybe 3 clusters
+iris_k2 <- k_means(iris_num, k = 2)
+chart(iris_k2)
+
+iris_k3 <- k_means(iris_num, k = 3, nstart = 20L) # Several random starts
+chart(iris_k3)
+
+# Get clusters and compare with Species
+iris3 <- augment(iris_k3, iris) # Use predict() to just get clusters
+head(iris3)
+table(iris3$.cluster, iris3$Species) # setosa OK, the other are mixed a bit
 }

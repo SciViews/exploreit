@@ -1,3 +1,5 @@
 # exploreit To Do list
 
--   Add code for Kmeans, SOM, PCA FA & MFA
+-   Get `pcomp()` and associated function here instead of in the {SciViews} package.
+
+-   French versions for the plot.

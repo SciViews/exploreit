@@ -4,9 +4,12 @@
 \name{reexports}
 \alias{reexports}
 \alias{augment}
+\alias{glance}
 \title{Objects exported from other packages}
 \seealso{
 \code{\link[=augment.Cluster]{augment.Cluster()}}, \code{\link[=augment.kmeans]{augment.kmeans()}}
+
+\code{\link[=glance.mds]{glance.mds()}}
 }
 \keyword{internal}
 \description{
@@ -14,6 +17,8 @@ These objects are imported from other packages. Follow the links
 below to see their documentation.
 
 \describe{
+  \item{broom}{\code{\link[broom:reexports]{glance}}}
+
   \item{generics}{\code{\link[generics]{augment}}}
 }}
 

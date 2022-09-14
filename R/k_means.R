@@ -44,7 +44,22 @@
 #' @export
 #'
 #' @examples
-#' # TODO...
+#' data(iris, package = "datasets")
+#' iris_num <- iris[, -5] # Only numerical variables
+#' library(chart)
+#'
+#' # Profile k is to be taken only asx a (useful) indication!
+#' profile_k(iris_num) # 2, maybe 3 clusters
+#' iris_k2 <- k_means(iris_num, k = 2)
+#' chart(iris_k2)
+#'
+#' iris_k3 <- k_means(iris_num, k = 3, nstart = 20L) # Several random starts
+#' chart(iris_k3)
+#'
+#' # Get clusters and compare with Species
+#' iris3 <- augment(iris_k3, iris) # Use predict() to just get clusters
+#' head(iris3)
+#' table(iris3$.cluster, iris3$Species) # setosa OK, the other are mixed a bit
 k_means <- function(x, k, centers = k, iter.max = 10L, nstart = 1L,
 algorithm = c("Hartigan-Wong", "Lloyd", "Forgy", "MacQueen"), trace = FALSE,
 keep.data = TRUE) {
@@ -74,7 +89,12 @@ profile_k <- function(x, fun = kmeans, method = "wss", k.max = NULL, ...) {
 #' @rdname k_means
 augment.kmeans <- function(x, data, ...) {
   # broom::augment.kmeans() seems buggy when data is called 'x'
-  res <- fix_data_frame(data, newcol = ".rownames")
+  if (is.null(rownames(x)) || all(rownames(x) == 1:NROW(x))) {
+    res <- as_tibble(data)
+  } else {
+    res <- as_tibble(data,
+      rownames = getOption("SciViews.dtx.rownames", default = ".rownames"))
+  }
   res$.cluster <- factor(x$cluster)
   res
 }

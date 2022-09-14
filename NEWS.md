@@ -1,5 +1,7 @@
 # exploreit 0.1.0
 
+-   `mds()` and associated methods and functions (`shepard()`) added.
+
 -   `k_means()`, `profile_k()` and associated methods added.
 
 -   Methods `scale()` for data.frame, data.table and tibble's tbl_df.

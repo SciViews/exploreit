@@ -15,7 +15,7 @@ dissimilarity(
   subset = NULL,
   method = "euclidean",
   scale = FALSE,
-  rownames.col = "rowname",
+  rownames.col = getOption("SciViews.dtx.rownames", default = ".rownames"),
   transpose = FALSE,
   fun = NULL,
   ...

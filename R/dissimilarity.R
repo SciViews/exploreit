@@ -44,7 +44,8 @@
 #' autoplot(iris_dist)
 #' chart(iris_dist, gradient = list(low = "green", mid = "white", high = "red"))
 dissimilarity <- function(data, formula = ~ ., subset = NULL,
-method = "euclidean", scale = FALSE, rownames.col = "rowname",
+method = "euclidean", scale = FALSE,
+rownames.col = getOption("SciViews.dtx.rownames", default = ".rownames"),
 transpose = FALSE, fun = NULL, ...) {
   # TODO: get more meaningful warnings and errors by replacing fun by actual
   # name of the function
@@ -187,10 +188,10 @@ print.Dissimilarity <- function(x, digits.d = 3L, rownames.lab = "labels",
   diag(mat) <- ""
   mat[upper.tri(mat)] <- ""
   class(mat) <- c("dst", "matrix")
-  tbl <- tibble::as_tibble(mat)
+  tbl <- as_tibble(mat)
   #tbl <- tibble::add_column(tbl, {{rownames.lab}} = rownames(mat), .before = 1)
   # I prefer this
-  tbl <- dplyr::bind_cols(
+  tbl <- cbind( #dplyr::bind_cols(
     as_tibble_col(rownames(mat), column_name = rownames.lab), tbl)
   tbl <- tbl[, -ncol(tbl)]
   more_info <- ""
