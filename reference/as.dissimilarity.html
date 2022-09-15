@@ -118,8 +118,9 @@
     <div id="ref-examples">
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">SciViews</span><span class="fu">::</span><span class="va"><a href="https://www.sciviews.org/SciViews/reference/SciViews_R.html" class="external-link">R</a></span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ── <span style="font-weight: bold;">Attaching packages</span> ───────────────────────────────────── SciViews::R 1.4.0 ──</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">SciViews  </span> 1.4.0        <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">dtplyr    </span> 1.2.2   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">Default data frame object (dtx): </span><span style="font-weight: bold;">data.table</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ── <span style="font-weight: bold;">Attaching packages</span> ───────────────────────────────────── SciViews::R 1.5.0 ──</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">SciViews  </span> 1.5.0        <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">dtplyr    </span> 1.2.2   </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">chart     </span> 1.4.0        <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">dplyr     </span> 1.0.10  </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">data.io   </span> 1.4.1        <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">tidyr     </span> 1.2.1   </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">svFlow    </span> 1.2.1        <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">tibble    </span> 3.1.8   </span>
@@ -141,7 +142,6 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">dplyr</span>::<span style="color: #00BB00;">last()</span>    masks <span style="color: #0000BB;">data.table</span>::last()</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">dplyr</span>::<span style="color: #00BB00;">select()</span>  masks <span style="color: #0000BB;">MASS</span>::select()</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> <span style="color: #0000BB;">data.io</span>::<span style="color: #00BB00;">write()</span> masks <span style="color: #0000BB;">base</span>::write()</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> ── Default data frame object (dtx) ─────────────────────────────── data.table ──</span>
 <span class="r-in"><span><span class="va">iris</span> <span class="op">&lt;-</span> <span class="fu">read</span><span class="op">(</span><span class="st">"iris"</span>, package <span class="op">=</span> <span class="st">"datasets"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">iris_num</span> <span class="op">&lt;-</span> <span class="va">iris</span><span class="op">[</span>, <span class="op">-</span><span class="fl">5</span><span class="op">]</span> <span class="co"># Only numeric columns from iris</span></span></span>
 <span class="r-in"><span><span class="co"># Construct a dist object</span></span></span>
