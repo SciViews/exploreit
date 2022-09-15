@@ -1,8 +1,8 @@
-# exploreit <a href='https://www.sciviews.org/exploreit'><img src="man/figures/logo.png" align="right" height="139"/></a>
+# exploreit- Exploratory Data Analysis <a href='https://www.sciviews.org/exploreit'><img src="man/figures/logo.png" align="right" height="139"/></a>
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/SciViews/exploreit/workflows/R-CMD-check/badge.svg)](https://github.com/SciViews/exploreit/actions) [![Codecov test coverage](https://codecov.io/gh/SciViews/exploreit/branch/master/graph/badge.svg)](https://codecov.io/gh/SciViews/exploreit?branch=master) [![CRAN status](https://www.r-pkg.org/badges/version/exploreit)](https://CRAN.R-project.org/package=exploreit) [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/SciViews/exploreit/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SciViews/exploreit/actions/workflows/R-CMD-check.yaml) [![Codecov test coverage](https://codecov.io/gh/SciViews/exploreit/branch/master/graph/badge.svg)](https://codecov.io/gh/SciViews/exploreit?branch=master) [![CRAN status](https://www.r-pkg.org/badges/version/exploreit)](https://CRAN.R-project.org/package=exploreit) [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 
 <!-- badges: end -->
 
