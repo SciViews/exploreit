@@ -1,4 +1,4 @@
-# exploreit- Exploratory Data Analysis <a href='https://www.sciviews.org/exploreit'><img src="man/figures/logo.png" align="right" height="139"/></a>
+# exploreit- Exploratory multivariate data analysis <a href='https://www.sciviews.org/exploreit'><img src="man/figures/logo.png" align="right" height="139"/></a>
 
 <!-- badges: start -->
 
