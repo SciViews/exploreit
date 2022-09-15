@@ -38,8 +38,12 @@ Imports:
     vegan
 Suggests:
     cluster,
+    collapse,
     data.io (>= 1.3.0),
     dplyr,
+    dtplyr,
+    forcats,
+    fs,
     covr,
     knitr,
     rmarkdown,
