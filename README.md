@@ -6,7 +6,7 @@
 
 <!-- badges: end -->
 
-The {exploreit} package homogenizes the user interface to various multivariate analyses like PCA, MDS, K-means, hierarchical clustering, and more to match the `SciViews::R` style.
+The {exploreit} package homogenizes the user interface to various multivariate analyses like PCA, CA, MFA, MDS, K-means, hierarchical clustering, and more to match the `SciViews::R` style.
 
 ## Installation
 
