@@ -383,6 +383,11 @@ autoplot.ca <- function(object, choices = 1L:2L,
       contribs <- paste0("Dimension ", 1:length(object$sv), " (",
         round(object$sv^2 / sum(object$sv^2) * 100, 1), "%)")[choices]
 
+      # There is an error in plot_ca(): in case rownames in object is NULL
+      # -> calculate default rownames for our object
+      if (is.null(object$rownames)) {
+        object$rownames <- as.character(1:length(object$rowmass))
+      }
       res <- env$plot_ca(object, dim = choices, ...)
 
       rows <- as.data.frame(res$rows)

@@ -1,6 +1,6 @@
 Package: exploreit
 Type: Package
-Version: 1.0.0
+Version: 1.0.1
 Title: 'SciViews' - Exploratory Data Analysis
 Description: Multivariate analysis and data exploration by using 'SciViews::R'
   conventions.

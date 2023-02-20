@@ -1,4 +1,8 @@
-# exploreit 0.1.0
+# exploreit 1.0.1
+
+-   `autoplot()` and `chart()` for **ca** objects produced an error when rownames of the object are `NULL`. Default rownames are now added to avoid this.
+
+# exploreit 1.0.0
 
 -   `mfa()` and `chart()` for multiple factorial analysis added.
 
