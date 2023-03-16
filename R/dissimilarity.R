@@ -70,7 +70,7 @@ transpose = FALSE, fun = NULL, ...) {
     } else {# rownames.col is NOT used
       rownames.col <- NULL
     }
-    if (as.character(formula[2] != ".")) {
+    if (as.character(formula[2]) != ".") {
       # Subset the columns
       data <- model.frame(formula, data = data, subset = subset)
     } else if (!is.null(subset)) {
@@ -78,7 +78,7 @@ transpose = FALSE, fun = NULL, ...) {
     }
   } else {# A matrix
     rownames.col <- NULL
-    if (as.character(formula[2] != ".")) {
+    if (as.character(formula[2]) != ".") {
       # Subset the columns (and possibly the rows)
       if (is.null(subset)) {
         data <- data[, all.vars(formula)]

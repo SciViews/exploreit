@@ -152,7 +152,8 @@ augment.Cluster <- function(x, data, k = NULL, h = NULL, ...) {
   # Should we transpose the data (note: this is against augment() rules, but...)
   if (isTRUE(x$transpose)) {
     # We first have to make sure rownames are correct before the transposition
-    if (!is.matrix(data) && !is.null(data[[x$rownames.col]])) {
+    if (!is.matrix(data) && !is.null(x$rownames.col) &&
+      !is.null(data[[x$rownames.col]])) {
       rownames(data) <- data[[x$rownames.col]]
       data[[x$rownames.col]] <- NULL
     }
@@ -238,9 +239,11 @@ circ.text.size = 3, theme = theme_sciviews(), xlab = "", ylab = "Height", ...) {
 
   if (type == "circular") {
     if (isTRUE(labels)) {
+      xmax <- nobs(object) + 1
       # Get labels (need one more to avoid last = first!)
       label_df <- tibble::tibble(labels = c(labels(object)[object$order], ""))
-      xmax <- nobs(object) + 1
+      if (NROW(label_df) == 1) # No labels; make sure the tibble has enough rows
+        label_df <- tibble::tibble(labels = rep("", times = xmax))
       label_df$id <- 1:xmax
       angle <-  360 * (label_df$id - 0.5) / xmax
       # Left or right?

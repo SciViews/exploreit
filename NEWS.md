@@ -1,3 +1,11 @@
+# exploreit 1.0.2
+
+-   Correction of a bug in `dissimilarity()` when data is a **matrix** object and formula is `~ .`.
+
+-   Bug in `chart$circ()` corrected when there are no labels.
+
+-   Bug in `augment()` for a **Cluster** object created from a transposed dataset in `dissimilarity(...., transpose = TRUE)` corrected.
+
 # exploreit 1.0.1
 
 -   `autoplot()` and `chart()` for **ca** objects produced an error when rownames of the object are `NULL`. Default rownames are now added to avoid this.
