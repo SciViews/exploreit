@@ -175,13 +175,11 @@ doing!</p></dd>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/SciViews/chart" class="external-link">chart</a></span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">caith</span>, package <span class="op">=</span> <span class="st">"MASS"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">caith</span> <span class="co"># A two-way contingency table</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A data.frame: 4 x 5</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   ` `         fair   red medium  dark black</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;rownames&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> blue         326    38    241   110     3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> light        688   116    584   188     4</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> medium       343    84    909   412    26</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> dark          98    48    403   681    85</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        fair red medium dark black</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> blue    326  38    241  110     3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> light   688 116    584  188     4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> medium  343  84    909  412    26</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> dark     98  48    403  681    85</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/class.html" class="external-link">class</a></span><span class="op">(</span><span class="va">caith</span><span class="op">)</span> <span class="co"># in a data frame</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "data.frame"</span>
 <span class="r-in"><span><span class="va">caith_ca</span> <span class="op">&lt;-</span> <span class="fu">ca</span><span class="op">(</span><span class="va">caith</span><span class="op">)</span></span></span>

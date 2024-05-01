@@ -121,15 +121,13 @@ data frame and return an object of the same class.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 13.24839 76.00000 30.17097 </span>
 <span class="r-in"><span><span class="va">trees2</span> <span class="op">&lt;-</span> <span class="fu">scale</span><span class="op">(</span><span class="va">trees</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">trees2</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A data.frame: 6 x 3</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    Girth Height Volume</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> -<span style="color: #BB0000;">1.58</span>  -<span style="color: #BB0000;">0.942</span> -<span style="color: #BB0000;">1.21</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> -<span style="color: #BB0000;">1.48</span>  -<span style="color: #BB0000;">1.73</span>  -<span style="color: #BB0000;">1.21</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> -<span style="color: #BB0000;">1.42</span>  -<span style="color: #BB0000;">2.04</span>  -<span style="color: #BB0000;">1.21</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> -<span style="color: #BB0000;">0.876</span> -<span style="color: #BB0000;">0.628</span> -<span style="color: #BB0000;">0.838</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> -<span style="color: #BB0000;">0.812</span>  0.785 -<span style="color: #BB0000;">0.692</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> -<span style="color: #BB0000;">0.780</span>  1.10  -<span style="color: #BB0000;">0.637</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        Girth     Height     Volume</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 -1.5768542 -0.9416472 -1.2088547</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 -1.4812561 -1.7263533 -1.2088547</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 -1.4175241 -2.0402357 -1.2149382</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 -0.8758017 -0.6277648 -0.8377598</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 -0.8120696  0.7847060 -0.6917553</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 -0.7802036  1.0985884 -0.6370036</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/class.html" class="external-link">class</a></span><span class="op">(</span><span class="va">trees2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "data.frame"</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/colSums.html" class="external-link">colMeans</a></span><span class="op">(</span><span class="va">trees2</span><span class="op">)</span></span></span>
