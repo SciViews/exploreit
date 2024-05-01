@@ -63,7 +63,7 @@ doing!}
 \code{\link[=pca]{pca()}} produces a \strong{ca} object.
 }
 \description{
-\code{ca()} is a reexport of the function from the {ca} package, it
+\code{ca()} is a reexport of the function from the \{ca\} package, it
 offers a \code{ca(formula, data, ...)} interface. It is supplemented here with
 various \code{chart()} types.
 }

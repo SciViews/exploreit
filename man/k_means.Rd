@@ -116,7 +116,7 @@ help to chose the best value for \code{k}.
 }
 \description{
 Perform a k-means clustering analysis using the
-\code{\link[stats:kmeans]{stats::kmeans()}} function in {stats} but creating a \strong{k_means} object
+\code{\link[stats:kmeans]{stats::kmeans()}} function in \{stats\} but creating a \strong{k_means} object
 that possibly embeds the original data with the analysis for a richer set
 of methods.
 }

@@ -27,7 +27,7 @@ adding a circle in a base R plot.
 }
 \description{
 Add a circle in a base R plot, given its center (x and y
-coordinates) and its diameter. In {exploreit}, this function can be used to
+coordinates) and its diameter. In \{exploreit\}, this function can be used to
 cut a circular dendrogram, see example.
 }
 \examples{

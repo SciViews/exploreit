@@ -1,7 +1,7 @@
 #' K-means clustering
 #'
 #' @description Perform a k-means clustering analysis using the
-#'   [stats::kmeans()] function in {stats} but creating a **k_means** object
+#'   [stats::kmeans()] function in \{stats\} but creating a **k_means** object
 #'   that possibly embeds the original data with the analysis for a richer set
 #'   of methods.
 #'

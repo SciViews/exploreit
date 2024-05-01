@@ -2,7 +2,7 @@
 
 #' Correspondence Analysis (CA)
 #'
-#' @description `ca()` is a reexport of the function from the {ca} package, it
+#' @description `ca()` is a reexport of the function from the \{ca\} package, it
 #'   offers a `ca(formula, data, ...)` interface. It is supplemented here with
 #'   various `chart()` types.
 #'

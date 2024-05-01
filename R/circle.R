@@ -3,7 +3,7 @@
 #' Draw circles in a plot
 #'
 #' @description Add a circle in a base R plot, given its center (x and y
-#' coordinates) and its diameter. In {exploreit}, this function can be used to
+#' coordinates) and its diameter. In \{exploreit\}, this function can be used to
 #' cut a circular dendrogram, see example.
 #'
 #' @param x The x coordinate of the center of the circle.
