@@ -1,6 +1,22 @@
-#' @keywords internal
-"_PACKAGE"
+#' Exploratory Data Analysis for 'SciViews::R'
+#'
+#' Multivariate analysis and data exploration for 'SciViews::R'. PCA, CA, MFA,
+#' K-Means clustering, hierarchical clustering, MDS...
+#'
+#' @section Important functions:
+#'
+#' - [pca()] for Principal Component Analysis (PCA)
+#' - [ca()] for Correspondence Analysis (CA)
+#' - [mfa()] for Multiple Factor Analysis (MFA)
+#' - [k_means()] for K-Means clustering
+#' - [dissimilarity] for computing dissimilarity (distance) matrices
+#' - [cluster()] for Hierarchical clustering
+#' - [mds()] for metric and Non-metric MultiDimensional Scaling (MDS, NMDS)
+#'
+#' @docType package
+#' @name exploreit-package
 
+## usethis namespace: start
 #' @importFrom stats as.dendrogram as.dist as.hclust cmdscale cor cutree kmeans
 #'   nobs model.frame predict reshape
 #' @importFrom fastcluster hclust
@@ -28,8 +44,5 @@
 #' @importFrom rlang is_formula f_lhs f_rhs set_names
 #' @importFrom svFlow %>.%
 #' @importFrom ca ca
-# The following block is used by usethis to automatically manage
-# roxygen namespace tags. Modify with care!
-## usethis namespace: start
 ## usethis namespace: end
 NULL

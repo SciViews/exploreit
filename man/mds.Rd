@@ -16,8 +16,8 @@
 mds(
   dist,
   k = 2,
-  type = c("metric", "nonmetric", "cmdscale", "wcmdscale", "sammon", "isoMDS",
-    "monoMDS", "metaMDS"),
+  type = c("metric", "nonmetric", "cmdscale", "wcmdscale", "sammon", "isoMDS", "monoMDS",
+    "metaMDS"),
   p = 2,
   ...
 )

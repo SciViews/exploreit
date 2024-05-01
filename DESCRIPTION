@@ -1,69 +1,69 @@
 Package: exploreit
 Type: Package
-Version: 1.0.2
-Title: 'SciViews' - Exploratory Data Analysis
-Description: Multivariate analysis and data exploration by using 'SciViews::R'
-  conventions.
+Version: 1.0.3
+Title: Exploratory Data Analysis for 'SciViews::R'
+Description: Multivariate analysis and data exploration for the
+  'SciViews::R' dialect.
 Authors@R: 
   person("Philippe", "Grosjean", role = c("aut", "cre"),
     email = "phgrosjean@sciviews.org",
     comment = c(ORCID = "0000-0002-2694-9471"))
 Maintainer: Philippe Grosjean <phgrosjean@sciviews.org>
-Depends: R (>= 4.0.0)
+Depends: R (>= 4.2.0)
 Imports: 
-    ape,
-    broom,
-    ca,
-    chart (>= 1.3.0),
-    data.table,
-    factoextra,
-    FactoMineR,
-    fastcluster,
-    generics,
-    ggdendro,
-    ggfortify,
-    ggplot2,
-    ggrepel,
-    graphics,
-    grDevices,
-    grid,
-    lattice,
-    MASS,
-    rlang,
-    SciViews (>= 1.1.2),
-    stats,
+    ape (>= 5.7.1),
+    broom (>= 1.0.4),
+    ca (>= 0.71.1),
+    chart (>= 1.5.0),
+    data.table (>= 1.15.4),
+    factoextra (>= 1.0.7),
+    FactoMineR (>= 2.8),
+    fastcluster (>= 1.2.3),
+    generics (>= 0.1.3),
+    ggdendro (>= 0.1.23),
+    ggfortify (>= 0.4.16),
+    ggplot2 (>= 3.4.2),
+    ggrepel (>= 0.9.3),
+    graphics (>= 4.2.0),
+    grDevices (>= 4.2.0),
+    grid (>= 4.2.0),
+    lattice (>= 0.21.8),
+    MASS (>= 7.3.58.3),
+    rlang (>= 1.1.1),
+    SciViews (>= 1.6.0),
+    stats (>= 4.2.0),
     svFlow (>= 1.2.0),
-    tibble,
-    utils,
-    vegan
+    tibble (>= 3.2.1),
+    utils (>= 4.2.0),
+    vegan (>= 2.6.4),
 Suggests:
-    cluster,
-    collapse,
-    data.io (>= 1.3.0),
-    dplyr,
-    dtplyr,
-    forcats,
-    fs,
-    svBase,
-    svMisc,
-    covr,
-    knitr,
-    rmarkdown,
-    spelling,
+    cluster (>= 2.1.4),
+    collapse (>= 2.0.12),
+    data.io (>= 1.5.0),
+    dplyr (>= 1.1.4),
+    dtplyr (>= 1.3.1),
+    forcats (>= 1.0.0),
+    fs (>= 1.6.1),
+    svBase (>= 1.4.0),
+    svMisc (>= 1.4.0),
+    knitr (>= 1.42),
+    rmarkdown (>= 2.21),
+    spelling (>= 2.2.1),
     testthat (>= 3.0.0)
 Remotes: 
-    SciViews/chart,
     SciViews/data.io,
+    SciViews/chart,
     SciViews/SciViews,
     SciViews/svBase,
     SciViews/svFlow,
     SciViews/svMisc
-License: GPL (>= 2)
+License: MIT + file LICENSE
 URL: https://github.com/SciViews/exploreit, https://www.sciviews.org/exploreit/
 BugReports: https://github.com/SciViews/exploreit/issues
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
 VignetteBuilder: knitr
 Encoding: UTF-8
 Language: en-US
+ByteCompile: yes
 Config/testthat/edition: 3

@@ -2,25 +2,22 @@
 % Please edit documentation in R/exploreit-package.R
 \docType{package}
 \name{exploreit-package}
-\alias{exploreit}
 \alias{exploreit-package}
-\title{exploreit: 'SciViews' - Exploratory Data Analysis}
+\title{Exploratory Data Analysis for 'SciViews::R'}
 \description{
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
-
-Multivariate analysis and data exploration by using 'SciViews::R' conventions.
+Multivariate analysis and data exploration for 'SciViews::R'. PCA, CA, MFA,
+K-Means clustering, hierarchical clustering, MDS...
 }
-\seealso{
-Useful links:
+\section{Important functions}{
+
 \itemize{
-  \item \url{https://github.com/SciViews/exploreit}
-  \item \url{https://www.sciviews.org/exploreit/}
-  \item Report bugs at \url{https://github.com/SciViews/exploreit/issues}
+\item \code{\link[=pca]{pca()}} for Principal Component Analysis (PCA)
+\item \code{\link[=ca]{ca()}} for Correspondence Analysis (CA)
+\item \code{\link[=mfa]{mfa()}} for Multiple Factor Analysis (MFA)
+\item \code{\link[=k_means]{k_means()}} for K-Means clustering
+\item \link{dissimilarity} for computing dissimilarity (distance) matrices
+\item \code{\link[=cluster]{cluster()}} for Hierarchical clustering
+\item \code{\link[=mds]{mds()}} for metric and Non-metric MultiDimensional Scaling (MDS, NMDS)
+}
 }
 
-}
-\author{
-\strong{Maintainer}: Philippe Grosjean \email{phgrosjean@sciviews.org} (\href{https://orcid.org/0000-0002-2694-9471}{ORCID})
-
-}
-\keyword{internal}

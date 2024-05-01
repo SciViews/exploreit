@@ -1,23 +1,21 @@
 ---
-title: "exploreit - Exploratory Data Analysis in SciViews::R"
-author: "Philippe Grosjean (phgrosjean@sciviews.org)"
+title: "Exploratory Data Analysis for 'SciViews::R'"
+author: "Philippe Grosjean"
 date: "`r Sys.Date()`"
 output:
   rmarkdown::html_vignette:
+    toc: true
+    toc_depth: 3
     fig_caption: yes
 vignette: >
-  %\VignetteIndexEntry{exploreit - Exploratory Data Analysis in SciViews::R}
+  %\VignetteIndexEntry{Exploratory Data Analysis for 'SciViews::R'}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
-
-```{r setup}
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 library(exploreit)
 ```
+
+TODO...

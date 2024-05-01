@@ -1,3 +1,7 @@
+# exploreit 1.0.3
+
+-   License changed to MIT
+
 # exploreit 1.0.2
 
 -   Correction of a bug in `dissimilarity()` when data is a **matrix** object and formula is `~ .`.
