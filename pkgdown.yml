@@ -3,7 +3,7 @@ pkgdown: 2.0.9
 pkgdown_sha: ~
 articles:
   exploreit: exploreit.html
-last_built: 2024-05-01T12:51Z
+last_built: 2024-05-01T15:03Z
 urls:
   reference: https://www.sciviews.org/exploreit/reference
   article: https://www.sciviews.org/exploreit/articles
