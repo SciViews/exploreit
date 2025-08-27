@@ -1,75 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.sciviews.org/exploreit/404.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/CODE_OF_CONDUCT.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/TODO.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/articles/exploreit.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/index.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/reference/as.dissimilarity.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/reference/ca.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/reference/circle.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/reference/cluster.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/reference/dissimilarity.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/reference/exploreit-package.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/reference/geom_dendroline.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/reference/k_means.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/reference/mds.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/reference/mfa.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/reference/pca.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/reference/reexports.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/exploreit/reference/scale.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://www.sciviews.org/exploreit/404.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/LICENSE-text.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/LICENSE.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/TODO.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/articles/exploreit.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/articles/index.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/authors.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/index.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/news/index.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/reference/as.dissimilarity.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/reference/ca.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/reference/circle.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/reference/cluster.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/reference/dissimilarity.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/reference/exploreit-package.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/reference/geom_dendroline.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/reference/index.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/reference/k_means.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/reference/mds.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/reference/mfa.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/reference/pca.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/reference/reexports.html</loc></url>
+<url><loc>https://www.sciviews.org/exploreit/reference/scale.html</loc></url>
 </urlset>
+
