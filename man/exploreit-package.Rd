@@ -2,8 +2,9 @@
 % Please edit documentation in R/exploreit-package.R
 \docType{package}
 \name{exploreit-package}
+\alias{exploreit}
 \alias{exploreit-package}
-\title{Exploratory Data Analysis for 'SciViews::R'}
+\title{'SciViews::R' - Exploratory Data Analysis}
 \description{
 Multivariate analysis and data exploration for 'SciViews::R'. PCA, CA, MFA,
 K-Means clustering, hierarchical clustering, MDS...
@@ -21,3 +22,16 @@ K-Means clustering, hierarchical clustering, MDS...
 }
 }
 
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/SciViews/exploreit}
+  \item \url{https://www.sciviews.org/exploreit/}
+  \item Report bugs at \url{https://github.com/SciViews/exploreit/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Philippe Grosjean \email{phgrosjean@sciviews.org} (\href{https://orcid.org/0000-0002-2694-9471}{ORCID})
+
+}

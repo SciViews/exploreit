@@ -1,7 +1,7 @@
 Package: exploreit
 Type: Package
 Version: 1.0.3
-Title: Exploratory Data Analysis for 'SciViews::R'
+Title: 'SciViews::R' - Exploratory Data Analysis
 Description: Multivariate analysis and data exploration for the
   'SciViews::R' dialect.
 Authors@R: 
@@ -61,7 +61,7 @@ License: MIT + file LICENSE
 URL: https://github.com/SciViews/exploreit, https://www.sciviews.org/exploreit/
 BugReports: https://github.com/SciViews/exploreit/issues
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 VignetteBuilder: knitr
 Encoding: UTF-8
 Language: en-US

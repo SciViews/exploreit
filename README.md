@@ -1,9 +1,10 @@
-# Exploratory Data Analysis for 'SciViews::R' <a href='https://www.sciviews.org/exploreit'><img src='man/figures/logo.png' align='right' height='139'/></a>
+# Exploratory Data Analysis for 'SciViews::R' <a href='https://www.sciviews.org/exploreit'><img src='man/figures/logo.png' align='right' height='138'/></a>
 
 <!-- badges: start -->
-
-[![R-CMD-check](https://github.com/SciViews/exploreit/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SciViews/exploreit/actions/workflows/R-CMD-check.yaml) [![Codecov test coverage](https://codecov.io/gh/SciViews/exploreit/branch/main/graph/badge.svg)](https://codecov.io/gh/SciViews/exploreit?branch=main) [![CRAN status](https://www.r-pkg.org/badges/version/exploreit)](https://CRAN.R-project.org/package=exploreit) [![r-universe status](https://sciviews.r-universe.dev/badges/exploreit)](https://sciviews.r-universe.dev/exploreit) [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-
+[![R-CMD-check](https://github.com/SciViews/exploreit/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SciViews/exploreit/actions/workflows/R-CMD-check.yaml) [![codecov](https://codecov.io/gh/SciViews/exploreit/branch/main/graph/badge.svg)](https://codecov.io/gh/SciViews/exploreit?branch=main)
+[![CRAN status](https://www.r-pkg.org/badges/version/exploreit)](https://CRAN.R-project.org/package=exploreit)
+[![r-universe status](https://sciviews.r-universe.dev/badges/exploreit)](https://sciviews.r-universe.dev/exploreit)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 The {exploreit} package homogenizes the user interface to various multivariate analyses like PCA, CA, MFA, MDS, K-means, hierarchical clustering, and more to match the `SciViews::R` style.

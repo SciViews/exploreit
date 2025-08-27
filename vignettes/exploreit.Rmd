@@ -1,5 +1,5 @@
 ---
-title: "Exploratory Data Analysis for 'SciViews::R'"
+title: "'SciViews::R' - Exploratory Data Analysis"
 author: "Philippe Grosjean"
 date: "`r Sys.Date()`"
 output:
@@ -8,7 +8,7 @@ output:
     toc_depth: 3
     fig_caption: yes
 vignette: >
-  %\VignetteIndexEntry{Exploratory Data Analysis for 'SciViews::R'}
+  %\VignetteIndexEntry{'SciViews::R' - Exploratory Data Analysis}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

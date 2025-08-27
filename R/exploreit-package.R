@@ -1,4 +1,4 @@
-#' Exploratory Data Analysis for 'SciViews::R'
+#' 'SciViews::R' - Exploratory Data Analysis
 #'
 #' Multivariate analysis and data exploration for 'SciViews::R'. PCA, CA, MFA,
 #' K-Means clustering, hierarchical clustering, MDS...
@@ -13,9 +13,6 @@
 #' - [cluster()] for Hierarchical clustering
 #' - [mds()] for metric and Non-metric MultiDimensional Scaling (MDS, NMDS)
 #'
-#' @docType package
-#' @name exploreit-package
-
 ## usethis namespace: start
 #' @importFrom stats as.dendrogram as.dist as.hclust cmdscale cor cutree kmeans
 #'   nobs model.frame predict reshape
@@ -45,4 +42,4 @@
 #' @importFrom svFlow %>.%
 #' @importFrom ca ca
 ## usethis namespace: end
-NULL
+"_PACKAGE"
