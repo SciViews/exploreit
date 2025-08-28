@@ -11,10 +11,10 @@ The {exploreit} package homogenizes the user interface to various multivariate a
 
 ## Installation
 
-{exploreit} is not available from CRAN yet. You should install it from the [SciViews R-Universe](https://sciviews.r-universe.dev). {chart} is an alternate formula interface to {ggplot2}. {tabularise} produces publication-ready (rich-formatted) tabular output. The {equatags} and {equatiomatic} packages are optional, but they are useful to display equations, both inline in R Markdown/Quarto documents and in {tabularise} tables. {data.io} is useful too because it manages labels and units that {chart} uses. To install these six packages and their dependencies, run the following command in R:
+{exploreit} is not available from CRAN yet. You should install it from the [SciViews R-Universe](https://sciviews.r-universe.dev). {chart} is an alternate formula interface to {ggplot2}. {tabularise} produces publication-ready (rich-formatted) tabular output. The {equatags} and {equatiomatic} packages are optional, but they are useful to display equations, both inline in R Markdown/Quarto documents and in {tabularise} tables. {svBase} is useful too because it manages labels and units that {chart} uses. To install these six packages and their dependencies, run the following command in R:
 
 ``` r
-install.packages(c('modelit', 'chart', 'tabularise', 'equatags', 'equatiomatic', 'data.io'),
+install.packages(c('modelit', 'chart', 'tabularise', 'equatags', 'equatiomatic', 'svBase'),
   repos = c('https://sciviews.r-universe.dev', 'https://cloud.r-project.org'))
 ```
 
