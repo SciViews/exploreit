@@ -27,6 +27,7 @@ Useful links:
 \itemize{
   \item \url{https://github.com/SciViews/exploreit}
   \item \url{https://www.sciviews.org/exploreit/}
+  \item \url{https://sciviews.r-universe.dev/exploreit}
   \item Report bugs at \url{https://github.com/SciViews/exploreit/issues}
 }
 

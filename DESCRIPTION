@@ -46,7 +46,10 @@ Suggests:
     forcats (>= 1.0.0),
     fs (>= 1.6.1),
     svBase (>= 1.4.0),
+    svFast (>= 0.1.0),
+    svTidy (>= 0.10),
     svMisc (>= 1.4.0),
+    helpai (>= 0.10), 
     knitr (>= 1.42),
     rmarkdown (>= 2.21),
     spelling (>= 2.2.1),
@@ -57,7 +60,10 @@ Remotes:
     SciViews/SciViews,
     SciViews/svBase,
     SciViews/svFlow,
-    SciViews/svMisc
+    SciViews/svMisc,
+    SciViews/svFast,
+    SciViews/svTidy,
+    SciViews/helpai
 License: MIT + file LICENSE
 URL: https://github.com/SciViews/exploreit, https://www.sciviews.org/exploreit/, https://sciviews.r-universe.dev/exploreit
 BugReports: https://github.com/SciViews/exploreit/issues
