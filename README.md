@@ -1,4 +1,4 @@
-# Exploratory Data Analysis for 'SciViews::R' <a href='https://www.sciviews.org/exploreit'><img src='man/figures/logo.png' align='right' height='138'/></a>
+# 'SciViews::R' - Exploratory Data Analysis <a href='https://www.sciviews.org/exploreit'><img src='man/figures/logo.png' align='right' height='138'/></a>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/SciViews/exploreit/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SciViews/exploreit/actions/workflows/R-CMD-check.yaml) [![codecov](https://codecov.io/gh/SciViews/exploreit/branch/main/graph/badge.svg)](https://codecov.io/gh/SciViews/exploreit?branch=main)
